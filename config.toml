@@ -1,7 +1,7 @@
 # hugo server --minify --themesDir ... --baseURL=http://0.0.0.0:1313/theme/hugo-book/
 
 baseURL = 'https://become.radioac.dev/'
-title = 'Hugo Book'
+title = 'notes'
 theme = 'book'
 disableKinds = ['taxonomy', 'taxonomyTerm']
 
@@ -45,7 +45,8 @@ defaultContentLanguage = 'en'
 
   # (Optional, default docs) Specify section of content to render as menu
   # You can also set value to '*' to render all sections to menu
-  BookSection = 'docs'
+  #BookSection = 'docs'
+  BookSection = 'posts'
 
   # Set source repository location.
   # Used for 'Last Modified' and 'Edit this page' links.
@@ -54,7 +55,7 @@ defaultContentLanguage = 'en'
   # Enable "Edit this page" links for 'doc' page type.
   # Disabled by default. Uncomment to enable. Requires 'BookRepo' param.
   # Path must point to 'content' directory of repo.
-  BookEditPath = 'content'
+  BookEditPath = 'blob/master/content'
 
   # Configure the date format used on the pages
   # - In git information
