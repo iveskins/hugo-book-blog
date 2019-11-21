@@ -89,7 +89,7 @@
     directly of those, instead of their component parts.
 *** Why this post?  
     to remember that there is a big collection of them [[https://onedrive.live.com/?id=AC31052BF2B8CA11%211937&cid=AC31052BF2B8CA11][here]].
-** TODO 20191121 Links
+** DONE 20191121 Links
    :PROPERTIES:
    :EXPORT_FILE_NAME: 20191121-links
    :END:
@@ -107,7 +107,9 @@
       that it also mentioned that chewing speed has been shown to be a
       indicator of stress, so they had the participants chew at 70
       chews per minute to a metronone.. I wonder if you can look at
-      people and make any assessment of their stress level by their
+      people and make any assessment of their stress level by thei
+
+r
       chewing speed.. Anyway this article mentioned an unpalatable
       gum, Fazer Salmiakki. Which I of course wanted to know why
       anyone would make unpalatable gum. But it's just that salty
