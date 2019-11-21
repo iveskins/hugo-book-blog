@@ -89,8 +89,40 @@
     directly of those, instead of their component parts.
 *** Why this post?  
     to remember that there is a big collection of them [[https://onedrive.live.com/?id=AC31052BF2B8CA11%211937&cid=AC31052BF2B8CA11][here]].
+** TODO 20191121 Links
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: 20191121-links
+   :END:
+*** How do I get the DS_store file out of my git repo?
+    
+    https://web.archive.org/web/20190521183336/http://www.codeblocq.com/2016/01/Untrack-files-already-added-to-git-repository-based-on-gitignore/
+*** Where can I get example gitignore strings for osx?
+    https://github.com/github/gitignore
+*** What is the a Finish gum I want to try.
+    I was wondering if there was any endochrine disrupters in chewing
+    gum. And that lead me to read some research papers about gum. The
+    one i was reading was linking chewing flavorful gum to a reduction
+    in slival stress hormone indicators [fn::salivary cortisol level -
+    - https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5381771/ ] and in
+      that it also mentioned that chewing speed has been shown to be a
+      indicator of stress, so they had the participants chew at 70
+      chews per minute to a metronone.. I wonder if you can look at
+      people and make any assessment of their stress level by their
+      chewing speed.. Anyway this article mentioned an unpalatable
+      gum, Fazer Salmiakki. Which I of course wanted to know why
+      anyone would make unpalatable gum. But it's just that salty
+      liquorice flavor. 
 
-
+    https://candyhero.com/fazer-salmiakki-chewing-gum
+*** How do I Add footnotes to org?[fn::https://web.archive.org/web/20190924112658/https://orgmode.org/manual/Footnotes.html]
+** TODO I want to try a Kubernetes cluster on Pi
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: i-want-to-try-a-kubernetes-cluster-on-pi
+   :END:
+*** Link
+    https://itnext.io/building-a-kubernetes-cluster-on-raspberry-pi-and-low-end-equipment-part-1-a768359fbba3
+    https://github.com/lucasteligioridis/raspbernetes
+    https://itnext.io/headless-kubernetes-on-15-raspberry-pis-boot-in-under-8-minutes-808402ea2348
 * Emacs                                                              :@emacs:
 All posts in here will have the category set to /emacs/.
 ** TODO Writing Hugo blog in org                                   :hugo:org:
