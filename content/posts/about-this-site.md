@@ -1,7 +1,7 @@
 +++
 title = "About this site"
 author = ["T", "Ivan"]
-lastmod = 2019-11-20T15:48:30+09:00
+lastmod = 2019-11-21T11:53:59+09:00
 weight = 2001
 draft = false
 +++
@@ -41,10 +41,27 @@ md file for each Headding in the file.
     output a pretty well formated blog
 -   [ ] Get a better idead of how to controll the menues and things of
     the book theme
--   [ ] Make this integrated with netlify so i can just push
-    changes to github and have it update the site
--   [ ] make the edit this page go to the org file.
+-   Make this integrated with netlify so i can just push
+    changes to github and have it update the site. [This helped](https://gohugo.io/hosting-and-deployment/hosting-on-netlify/#use-hugo-themes-with-netlify). It
+    is now online at amazing-beaver-3ff5b0.netlify.com and soon
+    become.radioac.dev
+-   [ ] Wait for tsl certificate to be issued.
+-   [ ] make the "edit this page" link at bottom of template go to the org file.
 -   [ ] add some more blog like features to the book blog pages
     -   [ ] tags and things
     -   [ ] next and previous etc
 -   [ ] get the export on save thing working
+
+
+### Features I want. {#features-i-want-dot}
+
+-   [ ] Discovery
+    -   [ ] Other things from this tag
+    -   [ ] next and previous
+    -   [ ] category
+    -   [ ] Footnotes, or tool tips
+    -   [ ] move TOC to the left
+    -   [ ] Make a quiz mode.. like hide the content of the
+        subheadings until clicked.
+    -   [ ] have a summary footer for each post..
+        -   [ ] be able to skim browse all the post by these sumaries
