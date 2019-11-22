@@ -89,13 +89,13 @@
     directly of those, instead of their component parts.
 *** Why this post?  
     to remember that there is a big collection of them [[https://onedrive.live.com/?id=AC31052BF2B8CA11%211937&cid=AC31052BF2B8CA11][here]].
-** DONE 20191121 Links
+** DONE Links 2019 November 21
    :PROPERTIES:
    :EXPORT_FILE_NAME: 20191121-links
    :END:
 *** How do I get the DS_store file out of my git repo?
-    
-    https://web.archive.org/web/20190521183336/http://www.codeblocq.com/2016/01/Untrack-files-already-added-to-git-repository-based-on-gitignore/
+    [[https://web.archive.org/web/20190521183336/http://www.codeblocq.com/2016/01/Untrack-files-already-added-to-git-repository-based-on-gitignore/][Untrack-files-already-added-to-git-repository-based-on-gitignore]]
+
 *** Where can I get example gitignore strings for osx?
     https://github.com/github/gitignore
 *** What is the a Finish gum I want to try.

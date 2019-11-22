@@ -2,7 +2,7 @@
 title = "Writing Hugo blog in org"
 author = ["T", "Ivan"]
 date = 2017-09-10
-lastmod = 2019-11-22T15:37:52+09:00
+lastmod = 2019-11-22T15:59:13+09:00
 tags = ["hugo", "org"]
 categories = ["emacs"]
 weight = 2001
