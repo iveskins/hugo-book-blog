@@ -1,7 +1,7 @@
 +++
 title = "About this site"
 author = ["T", "Ivan"]
-lastmod = 2019-11-22T15:59:11+09:00
+lastmod = 2019-11-26T17:24:01+09:00
 weight = 2001
 draft = false
 +++
@@ -28,7 +28,7 @@ thing. As it stands, even though I have done many amazing things once, I'm
 not sure I could do them again any easier or quicker.
 
 All the content is kept in one file content-org/all-posts.org. It
-is exported with `C-c C-e H A`. Which triggers ox-hugo to make a
+is exported with `C-c C-e H A`. Which triggers ox-Hugo to make a
 md file for each Headding in the file.
 [how to link images](https://ox-hugo.scripter.co/doc/image-links/)
 
