@@ -34,7 +34,7 @@
     not sure I could do them again any easier or quicker.
     
     All the content is kept in one file content-org/all-posts.org. It
-    is exported with =C-c C-e H A=. Which triggers ox-hugo to make a
+    is exported with =C-c C-e H A=. Which triggers ox-Hugo to make a
     md file for each Headding in the file. 
     [[https://ox-hugo.scripter.co/doc/image-links/][how to link images]]
 
@@ -99,21 +99,19 @@
 *** Where can I get example gitignore strings for osx?
     https://github.com/github/gitignore
 *** What is the a Finish gum I want to try.
-    I was wondering if there was any endochrine disrupters in chewing
+    I was wondering if there was any endocrine disrupters in chewing
     gum. And that lead me to read some research papers about gum. The
     one i was reading was linking chewing flavorful gum to a reduction
-    in slival stress hormone indicators [fn::salivary cortisol level -
+    in saliva stress hormone indicators [fn::salivary cortisol level -
     - https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5381771/ ] and in
       that it also mentioned that chewing speed has been shown to be a
       indicator of stress, so they had the participants chew at 70
       chews per minute to a metronone.. I wonder if you can look at
-      people and make any assessment of their stress level by thei
-
-r
+      people and make any assessment of their stress level by their
       chewing speed.. Anyway this article mentioned an unpalatable
       gum, Fazer Salmiakki. Which I of course wanted to know why
       anyone would make unpalatable gum. But it's just that salty
-      liquorice flavor. 
+      licorice flavor. 
 
     https://candyhero.com/fazer-salmiakki-chewing-gum
 *** How do I Add footnotes to org?[fn::https://web.archive.org/web/20190924112658/https://orgmode.org/manual/Footnotes.html]
@@ -175,8 +173,88 @@ r
 	 once there first
        - How can you make sure users dont lose data if they input it
          into the new system and something goes wrong?
+** DONE How do I troubleshoot RDS connectivity?
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: how-do-i-troubleshoot-rds-connectivity
+   :END:
 
-	 
+*** How do I check access to RDS from my EC2 instance.
+    The endpoint address and port of an RDS database can be found from
+    the RDS console on the "Connectivity & security" page. 
+    To test Connectivity from a host to the DB here are some steps to
+    follow:
+    1) confirm the endpoint dns resolves to the IP of the DB
+       - `nslookup <endpoint>`
+    2) confirm network connectivity from host to the DB
+       - nc <endpoint> <port>
+    3) Try to connect with a database client. 
+       - psql -h <endpoint>
+
+*** Well that didn't work. What should I check?
+  1) Is there something else I should be doing?
+  2) Is everything turned on?
+     - For example is the RDS instance in a running state or stopped?
+  3) Are there typos anywhere?
+  4) Am I using the right tool for the job?
+  5) Is everything configured like you thought?
+     - IS the RDS instance in the subnet group you expected?
+     - Do you know how things are configured?
+  6) is the configuration correct generally speaking?
+     - Do the subnet ACLS and SG allow for traffic between the the Let's check. I'm sure its an ACL or SG problem. 
+     - Are RDS Subnet groups correct?
+
+ also [[https://aws.amazon.com/premiumsupport/knowledge-center/rds-cannot-connect/][here is the aws support docs]]. It adds 
+ - Check DNS resolution with nslook up. `nslookup rds.endpoint`
+   (usually I would ping the resolved IP to check network
+   connectivity. .but I have a feeling RDS hosts have ping responders
+   turned off.)
+ - Then check with telnet or nc
+ - As for troubleshooting the network the docs say
+   - check your VPC SGs allow access from client. 
+   - (probably also need to check the clients SG and ACLs allow access
+     out as well)
+   - 
+**** Extra Commands 
+    - install postgress on AmznLinux: `sudo amazon-linux-extras install postgresql10` 
+**** Links
+    - [[https://www.digitalocean.com/community/tutorials/how-to-use-netcat-to-establish-and-test-tcp-and-udp-connections-on-a-vps][Digital ocean blog]]
+
+*** Whats is an RDS subnet group? 
+ I made an RDS database, and then had problems connecting to it. It
+ turns out it had provisioned with an IP from another old projects
+ subnet, and that subnet's ACL didn't allow access. Why did my DB use
+ an interface in this seemingly random subnet? Maybe it was because of
+ the [[https://docs.rightscale.com/cm/dashboard/clouds/aws/rds_subnet_groups.html][RDS Subnet group]] configuration for this VPC. I had never heared of
+ this before so lets take a look.
+
+ #+BEGIN_QUOTE
+ An RDS Subnet Group is a collection of subnets that you can use to designate for your RDS database instance in a VPC. The database within your VPC will use the Subnet Group and the preferred Availability Zone to select a subnet and an IP address within that subnet. An Elastic Network Interface will be associated to the database instance with that IP address. Note that each DB Subnet Group should have at least one subnet for every Availability Zone in a given Region.
+ #+END_QUOTE
+  [fn::RightScale Docs - https://docs.rightscale.com/cm/dashboard/clouds/aws/rds_subnet_groups.html]
+ 
+**** Theory: I need to add my sedired subnet to the group, or make a new group
+
+*** Conclusion
+    When I provisioned our general systems VPC and subnets, I did not
+    account for the need of a second subnet in another AZ, for the use
+    of RDS. I need to go back to the team and talk about make a new
+    subnet.
+** DONE Troubleshooting together
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: troubleshooting-together
+   :END:
+
+*** Making Changes 
+    Aside from the general best practice of making changes in a
+    shared change controled environment (like not doing so without
+    prio planning and communication) When troublesshooting in an
+    environment that no-one is using for anything important currently,
+    it's important that you can put everything back how you found
+    it at the end. This helps prevent configuration drift, and breaking things
+    for the next guy. 
+    When troubleshooting, you should keep a detailed and time ordered
+    list of the changes to configuration. So you always know what you
+    changed, and how to reverse it back when your done.
     
 * Emacs                                                              :@emacs:
 All posts in here will have the category set to /emacs/.
