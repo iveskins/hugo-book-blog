@@ -146,9 +146,16 @@
       - Check the website - should be down
     - Login to postgres container- docker exec -it <postgres_docker_name> bash
       - Take a dump of your database:
-	- pg_dump -Fc -v -h localhost -U <username> -d <db_name> -p 5432 > dump_file.dump
-      - Copy the database to AWS RDS:While you’re in your postgres container:
-	- pg_restore -c -h <aws_rds_link> -U <username> -d <db_name> -v dump_file.dump
+	#+BEGIN_SRC
+	pg_dump -Fc -v -h localhost -U <username> -d <db_name> -p
+          5432 > dump_file.dump
+	 #+END_SRC
+      - Copy the database to AWS RDS:While you’re in your postgres
+        container:
+        #+BEGIN_SRC
+	pg_restore -c -h <aws_rds_link> -U <username> -d <db_name> -v
+        dump_file.dump
+	#+END_SRC
     - Login to AWS RDS, validate the last entries in some tables.
     - Deploy the new code (with the new AWS RDS url)
     - Check your website - should be up and running
@@ -162,13 +169,20 @@
  
 *** What I did to get it working.
      * Login to postgres container
-       `docker exec -it bw_db_1 bash`
+       #+BEGIN_SRC
+       docker exec -it bw_db_1 bash
+       #+END_SRC
      * Take a dump of your database:
-       `root@b8fe08f89e89:/# pg_dump -Fc -v -h localhost -U postgres -p 5432 > dump_file.dump`
+       #+BEGIN_SRC
+       root@b8fe08f89e89:/# pg_dump -Fc -v -h localhost -U postgres -p
+       5432 > dump_file.dump
+       #+END_SRC
      * Copy the database to AWS RDS
-       `pg_restore -c -h <rds.endpoint> -U <master_user> -v dump_file.dump`
-       `pg_restore -c -h bdw-multitenant-db-test.xxxxxxxxxxxxxxxxx.ap-northeast-1.rds.amazonaws.com
-       -U postgres -v dump_file.dump`
+       #+BEGIN_SRC
+       pg_restore -c -h <rds.endpoint> -U <master_user> -v dump_file.dump
+       pg_restore -c -h bdw-multitenant-db-test.xxxxxxxxxxxxxxxxx.ap-northeast-1.rds.amazonaws.com
+       -U postgres -v dump_file.dump
+       #+END_SRC
      * Put the DB details in the .env file, and in your docker-compose
        env vars if needed
      * A also rebuilt my images, but that was for an unrelated issue.

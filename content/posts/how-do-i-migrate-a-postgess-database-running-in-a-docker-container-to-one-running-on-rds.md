@@ -1,7 +1,7 @@
 +++
 title = "How do I migrate a postgess database running in a docker container to one running on RDS?"
 author = ["T", "Ivan"]
-lastmod = 2019-11-27T16:28:45+09:00
+lastmod = 2019-11-27T16:34:35+09:00
 weight = 2005
 draft = false
 +++
@@ -32,9 +32,18 @@ Transition to AWS RDS:
     -   Check the website - should be down
 -   Login to postgres container- docker exec -it <postgres\_docker\_name> bash
     -   Take a dump of your database:
-        -   pg\_dump -Fc -v -h localhost -U <username> -d <db\_name> -p 5432 > dump\_file.dump
-    -   Copy the database to AWS RDS:While you’re in your postgres container:
-        -   pg\_restore -c -h <aws\_rds\_link> -U <username> -d <db\_name> -v dump\_file.dump
+
+        ```nil
+        pg_dump -Fc -v -h localhost -U <username> -d <db_name> -p
+          5432 > dump_file.dump
+        ```
+    -   Copy the database to AWS RDS:While you’re in your postgres
+        container:
+
+        ```nil
+        pg_restore -c -h <aws_rds_link> -U <username> -d <db_name> -v
+        dump_file.dump
+        ```
 -   Login to AWS RDS, validate the last entries in some tables.
 -   Deploy the new code (with the new AWS RDS url)
 -   Check your website - should be up and running
@@ -51,13 +60,23 @@ Transition to AWS RDS:
 ## What I did to get it working. {#what-i-did-to-get-it-working-dot}
 
 -   Login to postgres container
-    \`docker exec -it bw\_db\_1 bash\`
+
+    ```nil
+    docker exec -it bw_db_1 bash
+    ```
 -   Take a dump of your database:
-    \`root@b8fe08f89e89:/# pg\_dump -Fc -v -h localhost -U postgres -p 5432 > dump\_file.dump\`
+
+    ```nil
+    root@b8fe08f89e89:/# pg_dump -Fc -v -h localhost -U postgres -p
+    5432 > dump_file.dump
+    ```
 -   Copy the database to AWS RDS
-    \`pg\_restore -c -h <rds.endpoint> -U <master\_user> -v dump\_file.dump\`
-    \`pg\_restore -c -h bdw-multitenant-db-test.xxxxxxxxxxxxxxxxx.ap-northeast-1.rds.amazonaws.com
-    -U postgres -v dump\_file.dump\`
+
+    ```nil
+    pg_restore -c -h <rds.endpoint> -U <master_user> -v dump_file.dump
+    pg_restore -c -h bdw-multitenant-db-test.xxxxxxxxxxxxxxxxx.ap-northeast-1.rds.amazonaws.com
+    -U postgres -v dump_file.dump
+    ```
 -   Put the DB details in the .env file, and in your docker-compose
     env vars if needed
 -   A also rebuilt my images, but that was for an unrelated issue.
