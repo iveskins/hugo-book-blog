@@ -1,7 +1,7 @@
 +++
 title = "Troubleshooting together"
 author = ["T", "Ivan"]
-lastmod = 2019-11-26T17:24:03+09:00
+lastmod = 2019-11-27T16:28:46+09:00
 weight = 2007
 draft = false
 +++
@@ -10,11 +10,11 @@ draft = false
 
 Aside from the general best practice of making changes in a
 shared change controled environment (like not doing so without
-prio planning and communication) When troublesshooting in an
+prior planning and communication) When trouble shooting in an
 environment that no-one is using for anything important currently,
-it's important that you can put everything back how you found
-it at the end. This helps prevent configuration drift, and breaking things
-for the next guy.
+it's still important to put everything back how you found it when
+you're finished. This helps prevent configuration drift, and
+breaking things for the next person.
 When troubleshooting, you should keep a detailed and time ordered
-list of the changes to configuration. So you always know what you
-changed, and how to reverse it back when your done.
+list of the things you have done. Especially changes to
+configuration, so you know how to reverse these chaneges after.

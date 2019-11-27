@@ -38,6 +38,7 @@ defaultContentLanguage = 'en'
   # (Optional, default none) Set the path to a logo for the book. If the logo is
   # /static/logo.png then the path would be logo.png
   # BookLogo = 'logo.png'
+  BookLogo = 'favicon.png'
 
   # (Optional, default none) Set leaf bundle to render as side menu
   # When not specified file structure and weights will be used
@@ -65,4 +66,5 @@ defaultContentLanguage = 'en'
   # (Optional, default true) Enables search function with flexsearch,
   # Index is built on fly, therefore it might slowdown your website.
   BookSearch = true
+
 

@@ -1,7 +1,7 @@
 +++
 title = "How do I migrate a postgess database running in a docker container to one running on RDS?"
 author = ["T", "Ivan"]
-lastmod = 2019-11-26T17:24:03+09:00
+lastmod = 2019-11-27T16:28:45+09:00
 weight = 2005
 draft = false
 +++
@@ -46,6 +46,26 @@ Transition to AWS RDS:
 ### Links {#links}
 
 -   <https://medium.com/@aditya_misra5/move-your-local-postgres-db-container-to-rds-in-12-simple-steps-84f9fd450c9e>
+
+
+## What I did to get it working. {#what-i-did-to-get-it-working-dot}
+
+-   Login to postgres container
+    \`docker exec -it bw\_db\_1 bash\`
+-   Take a dump of your database:
+    \`root@b8fe08f89e89:/# pg\_dump -Fc -v -h localhost -U postgres -p 5432 > dump\_file.dump\`
+-   Copy the database to AWS RDS
+    \`pg\_restore -c -h <rds.endpoint> -U <master\_user> -v dump\_file.dump\`
+    \`pg\_restore -c -h bdw-multitenant-db-test.xxxxxxxxxxxxxxxxx.ap-northeast-1.rds.amazonaws.com
+    -U postgres -v dump\_file.dump\`
+-   Put the DB details in the .env file, and in your docker-compose
+    env vars if needed
+-   A also rebuilt my images, but that was for an unrelated issue.
+-   I got some "incompatible marshal file format (can't be read)"
+    errors after doing this and recreating the docker container. Maybe
+    the clients cookies are no longer valid or something. I could log
+    in from another browser. so maybe some extra step is needed to
+    clear out rails cache (rake cache:clear)?
 
 
 ## What might the change path look like for production? {#what-might-the-change-path-look-like-for-production}

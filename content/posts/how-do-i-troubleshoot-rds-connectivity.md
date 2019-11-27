@@ -1,7 +1,7 @@
 +++
 title = "How do I troubleshoot RDS connectivity?"
 author = ["T", "Ivan"]
-lastmod = 2019-11-26T17:24:03+09:00
+lastmod = 2019-11-27T16:28:45+09:00
 weight = 2006
 draft = false
 +++
@@ -71,9 +71,6 @@ this before so lets take a look.
 > An RDS Subnet Group is a collection of subnets that you can use to designate for your RDS database instance in a VPC. The database within your VPC will use the Subnet Group and the preferred Availability Zone to select a subnet and an IP address within that subnet. An Elastic Network Interface will be associated to the database instance with that IP address. Note that each DB Subnet Group should have at least one subnet for every Availability Zone in a given Region.
 
 [^fn:1]
-
-
-### Theory: I need to add my sedired subnet to the group, or make a new group {#theory-i-need-to-add-my-sedired-subnet-to-the-group-or-make-a-new-group}
 
 
 ## Conclusion {#conclusion}
