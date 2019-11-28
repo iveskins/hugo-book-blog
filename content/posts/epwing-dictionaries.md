@@ -1,7 +1,7 @@
 +++
 title = "Epwing dictionaries"
 author = ["T", "Ivan"]
-lastmod = 2019-11-27T16:34:34+09:00
+lastmod = 2019-11-28T19:09:25+09:00
 weight = 2002
 draft = false
 +++

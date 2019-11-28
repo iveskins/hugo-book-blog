@@ -89,32 +89,82 @@
     directly of those, instead of their component parts.
 *** Why this post?  
     to remember that there is a big collection of them [[https://onedrive.live.com/?id=AC31052BF2B8CA11%211937&cid=AC31052BF2B8CA11][here]].
-** DONE Links 2019 November 21
+** DONE Links 
    :PROPERTIES:
    :EXPORT_FILE_NAME: 20191121-links
    :END:
-*** How do I get the DS_store file out of my git repo?
-    [[https://web.archive.org/web/20190521183336/http://www.codeblocq.com/2016/01/Untrack-files-already-added-to-git-repository-based-on-gitignore/][Untrack-files-already-added-to-git-repository-based-on-gitignore]]
+*** 2019 November 
+**** 21
+***** How do I get the DS_store file out of my git repo?
+      [[https://web.archive.org/web/20190521183336/http://www.codeblocq.com/2016/01/Untrack-files-already-added-to-git-repository-based-on-gitignore/][Untrack-files-already-added-to-git-repository-based-on-gitignore]]
 
-*** Where can I get example gitignore strings for osx?
-    https://github.com/github/gitignore
-*** What is the a Finish gum I want to try.
-    I was wondering if there was any endocrine disrupters in chewing
-    gum. And that lead me to read some research papers about gum. The
-    one i was reading was linking chewing flavorful gum to a reduction
-    in saliva stress hormone indicators [fn::salivary cortisol level -
-    - https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5381771/ ] and in
-      that it also mentioned that chewing speed has been shown to be a
-      indicator of stress, so they had the participants chew at 70
-      chews per minute to a metronone.. I wonder if you can look at
-      people and make any assessment of their stress level by their
-      chewing speed.. Anyway this article mentioned an unpalatable
-      gum, Fazer Salmiakki. Which I of course wanted to know why
-      anyone would make unpalatable gum. But it's just that salty
-      licorice flavor. 
+***** Where can I get example gitignore strings for osx?
+      https://github.com/github/gitignore
+***** What is the a Finish gum I want to try.
+      I was wondering if there was any endocrine disrupters in chewing
+      gum. And that lead me to read some research papers about gum. The
+      one i was reading was linking chewing flavorful gum to a reduction
+      in saliva stress hormone indicators [fn::salivary cortisol level -
+      - https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5381771/ ] and in
+	that it also mentioned that chewing speed has been shown to be a
+	indicator of stress, so they had the participants chew at 70
+	chews per minute to a metronone.. I wonder if you can look at
+	people and make any assessment of their stress level by their
+	chewing speed.. Anyway this article mentioned an unpalatable
+	gum, Fazer Salmiakki. Which I of course wanted to know why
+	anyone would make unpalatable gum. But it's just that salty
+	licorice flavor. 
 
-    https://candyhero.com/fazer-salmiakki-chewing-gum
-*** How do I Add footnotes to org?[fn::https://web.archive.org/web/20190924112658/https://orgmode.org/manual/Footnotes.html]
+      https://candyhero.com/fazer-salmiakki-chewing-gum
+***** How do I Add footnotes to org?[fn::https://web.archive.org/web/20190924112658/https://orgmode.org/manual/Footnotes.html]
+**** 28
+***** What is deschooling?
+      [[http://www.unwelcomeguests.net/Deschooling_Society][book and mp3 here]] This is about an distributed,
+      non-institutional approach to education. It's criticisms of
+      schools are about how they condition people to chase the symbol
+      of the thing not the real thing .. was my skim reading 
+***** Some interesting discussion of the costs and responses to climate change from HN community
+      https://news.ycombinator.com/item?id=21648582
+***** IOT edge tool
+      https://docs.edgexfoundry.org/Ch-Intro.html
+      A project to handle the movement of data from and between IOT
+      devices and the cloud services they server
+***** Facebook has alternative text on images describing their features made by AI. 
+      I noticed today, that an image in my feed had text, one person
+      and airplane. It's an accessibility thing. If only they let my
+      just copy text from the mobile site.. sesh.. dont need AI to not
+      do anti-patterns for free use 
+      [[https://www.theverge.com/2016/4/5/11364914/facebook-automatic-alt-tags-blind-visually-impared][link]]
+***** Blog / writing platform 
+      https://read.write.as/ Write.as seems nice and simple.. not sure
+      if I would pay for it.. 
+***** A source of information about CMS platforms and other tech reviews
+      Not sure how much of this site is payola .. but its a good place
+      to find a lot of CMS related service [[https://www.cmscritic.com][CMSCRITIC.com]]
+      and https://headlesscms.org/
+***** WP > Publii
+      https://www.callmefred.com/i-switched-from-wordpress-to-a-static-website-using-publii/
+      https://tidycustoms.net/introducing-publii-static-website-cms/
+***** What can be done about bitrot
+      https://www.redhat.com/en/blog/what-bit-rot-and-how-can-i-detect-it-rhel
+      https://scotch.io/bar-talk/how-i-migrated-from-wordpress-to-a-static-site
+      This was an easy to follow and practical discussion with
+      commands and all, about using a layer between a block device and
+      a FS to keep track of bitrot. I since found someone who
+      automated this with raid1 set up.. 
+***** An interesting Japanese thinker maybe 
+      https://en.wikipedia.org/wiki/Kojin_Karatani
+      because you need to get more involved with intelectual
+      communities outside of english world
+***** Media theory in japan overview book
+      https://www.dukeupress.edu/media-theory-in-japan
+***** Bio of a Canadian born Tokyo university prof talking about democracy etc
+      https://www.u-tokyo.ac.jp/en/whyutokyo/people020.html
+***** Word press to static site generators
+      https://wp2static.com/
+      one possible plugin
+
+
 ** TODO I want to try a Kubernetes cluster on Pi
    :PROPERTIES:
    :EXPORT_FILE_NAME: i-want-to-try-a-kubernetes-cluster-on-pi
@@ -165,7 +215,8 @@
 
 **** Links
      - https://medium.com/@aditya_misra5/move-your-local-postgres-db-container-to-rds-in-12-simple-steps-84f9fd450c9e
-
+       
+       
  
 *** What I did to get it working.
      * Login to postgres container
@@ -287,7 +338,52 @@
     When troubleshooting, you should keep a detailed and time ordered
     list of the things you have done. Especially changes to
     configuration, so you know how to reverse these chaneges after.
-    
+** TODO Usefull Tools
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: usefull-tools
+   :END:
+*** Thursday, 11/28/19
+    - [[https://gchq.github.io/CyberChef/][A swiss army knife tool for data transformation and analysis for
+      Web apps]] 
+      Could be useful when developing web apps, or troubleshooting
+      issues with apps. I found it in relation to someone describing
+      traffic to their host that was BASE64 encoded twice. You can
+      chain transformation together. It also seems to have quite a few
+      image forensic tools.
+** TODO How to build a Publii blog with Netlify
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: how-to-build-a-publii-blog-with-netlify
+   :END:
+ [[https://getpublii.com/docs/build-a-static-website-with-netlify.html#js-header][Pretty much this]]. If the css doesn't load, double check you used
+ https when putting in the netlify url into the publii server setting
+ page.
+
+
+My impressions is that the number of themes are a bit limited. There
+also seems to be a bit of learning curve as to how all the fields and
+levers in the settings page relate to changes on the site. Like it
+took me a few tries to get the landing page background image
+changed. apparently that is called a "hero section". 
+I was also interested in the little work around of starting a new
+netlify page by uploading a zip file with an empty index.html. Seems
+like a bit of a design oversight or .. anti-patern.. to not just have
+a create new site buton that is not linked to a git repo. It also
+seems a bit of a security nono to have to make an access token that
+has rites to my entire netlify account when I only want to manage one
+page. And then is that token stored safely on my desktop? anyway there
+is nothing stopping someone(on my desktop) clicking the show password
+and getting an access token that can be used to change anything on my
+netlify account... 
+
+I was also interested to see the import wordpress WXR file tool. I
+wonder how that would work out.. Just take all the posts and pages
+etc.. You would still have to do a lot of theme or css work I think.
+
+
+
+Also I worry If I make this on my work computer I will get trapped
+there. [[https://getpublii.com/blog/managing-static-website-on-multiple-computers.html][This]] talks about how to edit from multiple computers. 
+
 
 * Emacs                                                              :@emacs:
 All posts in here will have the category set to /emacs/.
