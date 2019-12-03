@@ -65,6 +65,9 @@
          subheadings until clicked.
        - [ ] have a summary footer for each post.. 
 	 - [ ] be able to skim browse all the post by these sumaries
+**** Alternatives
+***** Hosting
+      - https://zeit.co/
 
 ** DONE Epwing dictionaries
    :PROPERTIES:
@@ -199,7 +202,7 @@
 	#+BEGIN_SRC
 	pg_dump -Fc -v -h localhost -U <username> -d <db_name> -p
           5432 > dump_file.dump
-	 #+END_SRC
+:q	 #+END_SRC
       - Copy the database to AWS RDS:While you’re in your postgres
         container:
         #+BEGIN_SRC
@@ -383,7 +386,129 @@ etc.. You would still have to do a lot of theme or css work I think.
 
 Also I worry If I make this on my work computer I will get trapped
 there. [[https://getpublii.com/blog/managing-static-website-on-multiple-computers.html][This]] talks about how to edit from multiple computers. 
+** TODO links 2019 11 29
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: links-2019-11-29
+   :END:
+*** How do you make file-specific setting changes in Vim?
+    using [[https://www.howtoforge.com/tutorial/vim-modeline-settings/][Modeline]]. like to [[https://stackoverflow.com/questions/3853028/how-to-force-vim-to-syntax-highlight-a-file-as-html][force a file type]] and if it don't work
+    look [[https://superuser.com/questions/323712/modeline-not-work-in-vim][here]] and [[https://emacs.stackexchange.com/questions/36525/is-there-an-emacs-equivalent-of-vims-modeline-magic][here]]. 
+*** What are parasocial relationships?
+    This a term often used in examination of marketing and star
+    power. Like [[https://www.sciencedirect.com/science/article/pii/S0747563218302553][how digital celeberties influence people to buy
+    things]]. And whats is [[https://digg.com/2018/parasocial-relationships-shannon-strucci-interview][wron with youtube culture]]. 
+** TODO What was that chinese open source project to make RSS feeds from websites?
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: what-was-that-chinese-open-source-project-to-make-rss-feeds-from-websites
+   :END:
+ it was [[https://docs.rsshub.app/en/][RSShub]]
+** TODO Terminal Tools
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: terminal-tools
+   :END:
+ 
+As the workstation I station my work at slowly evolves, I grow
+forgetful of all the little things I have done to make it comfortable
+and efficient. 
+*** Command Line tools
+****  [[http://lnav.org/][Lnav]]
+     Is a log file viewer with some great features for search, syntax
+     highlighting, and in / out filtering, that makes it realy quick
+     to understand the information in a log file. What is good about
+     it, is that it is powerful like having a log agergation platform,
+     but it is just a lightweight command line application.
+**** Htop
+     is better than top
+**** [[https://ranger.github.io/][Ranger]]
+     Is a "A VIM-inspired filemanager for the console". It can be used
+     for very quick navigation of files. it also integrates with
+     iterm, and other terminal apps to allow for preview of images.
+**** NVIM
+***** plugins
+****** Nerdtree
+***** Keybindings
+***** Config
+**** Emacs
+***** Aquamacs
+*** Docker apps
+**** Prouctivity
+***** Icescrum
+**** DNS
+***** pihole
+***** Cloudflare
+**** Webdav
+     - for zotero sync
+*** Publishing
+**** Blog
+***** Hugo
+****** -> emacs 
+***** Publi
 
+
+*** Colour schemes
+*** Chat
+    - nheko
+    - riot
+  
+*** Fonts
+
+*** Editors
+
+**** see nvim and emacs
+
+**** Atom
+
+**** sublime text
+
+**** textmate
+
+*** Utility software 
+
+**** Spectical
+     - making osx more like a tiling windows manager .. use hotkeys to
+       shove windows around the screen into layouts 
+
+**** Clippy
+     - clipboard history
+
+**** BalenaEtcher
+     - write images to sd cards (for RPI etc)
+**** Keka
+     - (un)compress files
+*** Browser
+**** Chrome
+***** Plugins
+**** Firefox
+***** Plugins
+*** Language
+**** Custom dictionaries
+***** Types
+      - Emoji
+***** MacOS
+***** Google japanese Input 
+***** Where to get what
+****** EPWING
+****** JSON
+**** Japanese word lookup
+***** Browser
+****** Mouse Dictionary
+****** Yomichan
+***** Whole OS
+****** Mac Linguist
+**** Study
+***** Flashcards
+****** Anki
+******* Deck types
+******* Input
+***** Media
+****** Subtitle Video Viewer
+****** Reading app
+**** Keyboards
+***** Macbook
+****** Remapping keys
+****** Typing things like づ
+*** Research
+**** Zoreto
 
 * Emacs                                                              :@emacs:
 All posts in here will have the category set to /emacs/.
