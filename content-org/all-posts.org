@@ -168,7 +168,7 @@
       one possible plugin
 
 
-** TODO I want to try a Kubernetes cluster on Pi
+** DONE I want to try a Kubernetes cluster on Pi
    :PROPERTIES:
    :EXPORT_FILE_NAME: i-want-to-try-a-kubernetes-cluster-on-pi
    :END:
@@ -341,7 +341,7 @@
     When troubleshooting, you should keep a detailed and time ordered
     list of the things you have done. Especially changes to
     configuration, so you know how to reverse these chaneges after.
-** TODO Usefull Tools
+** DONE Usefull Tools
    :PROPERTIES:
    :EXPORT_FILE_NAME: usefull-tools
    :END:
@@ -353,7 +353,7 @@
       traffic to their host that was BASE64 encoded twice. You can
       chain transformation together. It also seems to have quite a few
       image forensic tools.
-** TODO How to build a Publii blog with Netlify
+** DONE How to build a Publii blog with Netlify
    :PROPERTIES:
    :EXPORT_FILE_NAME: how-to-build-a-publii-blog-with-netlify
    :END:
@@ -386,7 +386,7 @@ etc.. You would still have to do a lot of theme or css work I think.
 
 Also I worry If I make this on my work computer I will get trapped
 there. [[https://getpublii.com/blog/managing-static-website-on-multiple-computers.html][This]] talks about how to edit from multiple computers. 
-** TODO links 2019 11 29
+** DONE links 2019 11 29
    :PROPERTIES:
    :EXPORT_FILE_NAME: links-2019-11-29
    :END:
@@ -397,12 +397,12 @@ there. [[https://getpublii.com/blog/managing-static-website-on-multiple-computer
     This a term often used in examination of marketing and star
     power. Like [[https://www.sciencedirect.com/science/article/pii/S0747563218302553][how digital celeberties influence people to buy
     things]]. And whats is [[https://digg.com/2018/parasocial-relationships-shannon-strucci-interview][wron with youtube culture]]. 
-** TODO What was that chinese open source project to make RSS feeds from websites?
+** DONE What was that chinese open source project to make RSS feeds from websites?
    :PROPERTIES:
    :EXPORT_FILE_NAME: what-was-that-chinese-open-source-project-to-make-rss-feeds-from-websites
    :END:
  it was [[https://docs.rsshub.app/en/][RSShub]]
-** TODO Terminal Tools
+** DONE Terminal Tools
    :PROPERTIES:
    :EXPORT_FILE_NAME: terminal-tools
    :END:
