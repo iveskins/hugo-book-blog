@@ -1,7 +1,7 @@
 +++
 title = "About this site"
 author = ["T", "Ivan"]
-lastmod = 2019-11-28T19:09:25+09:00
+lastmod = 2019-12-03T17:20:43+09:00
 weight = 2001
 draft = false
 +++
@@ -65,3 +65,11 @@ md file for each Headding in the file.
         subheadings until clicked.
     -   [ ] have a summary footer for each post..
         -   [ ] be able to skim browse all the post by these sumaries
+
+
+### Alternatives {#alternatives}
+
+
+#### Hosting {#hosting}
+
+-   <https://zeit.co/>

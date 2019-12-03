@@ -1,7 +1,7 @@
 +++
 title = "How do I migrate a postgess database running in a docker container to one running on RDS?"
 author = ["T", "Ivan"]
-lastmod = 2019-11-28T19:09:27+09:00
+lastmod = 2019-12-03T17:20:45+09:00
 weight = 2005
 draft = false
 +++
@@ -34,15 +34,14 @@ Transition to AWS RDS:
     -   Take a dump of your database:
 
         ```nil
-        pg_dump -Fc -v -h localhost -U <username> -d <db_name> -p
-          5432 > dump_file.dump
-        ```
-    -   Copy the database to AWS RDS:While you’re in your postgres
-        container:
-
-        ```nil
-        pg_restore -c -h <aws_rds_link> -U <username> -d <db_name> -v
-        dump_file.dump
+        	pg_dump -Fc -v -h localhost -U <username> -d <db_name> -p
+        	  5432 > dump_file.dump
+        :q	 #+END_SRC
+              - Copy the database to AWS RDS:While you’re in your postgres
+        	container:
+        	#+BEGIN_SRC
+        	pg_restore -c -h <aws_rds_link> -U <username> -d <db_name> -v
+        	dump_file.dump
         ```
 -   Login to AWS RDS, validate the last entries in some tables.
 -   Deploy the new code (with the new AWS RDS url)

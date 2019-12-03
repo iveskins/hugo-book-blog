@@ -1,9 +1,9 @@
 +++
 title = "How to build a Publii blog with Netlify"
 author = ["T", "Ivan"]
-lastmod = 2019-11-28T19:09:28+09:00
+lastmod = 2019-12-03T17:20:46+09:00
 weight = 2009
-draft = true
+draft = false
 +++
 
 [Pretty much this](https://getpublii.com/docs/build-a-static-website-with-netlify.html#js-header). If the css doesn't load, double check you used
