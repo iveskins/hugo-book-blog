@@ -167,7 +167,6 @@
       https://wp2static.com/
       one possible plugin
 
-
 ** DONE I want to try a Kubernetes cluster on Pi
    :PROPERTIES:
    :EXPORT_FILE_NAME: i-want-to-try-a-kubernetes-cluster-on-pi
@@ -509,6 +508,7 @@ and efficient.
 ****** Typing things like づ
 *** Research
 **** Zoreto
+
 
 * Emacs                                                              :@emacs:
 All posts in here will have the category set to /emacs/.
