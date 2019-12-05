@@ -1,7 +1,7 @@
 +++
 title = "About this site"
 author = ["T", "Ivan"]
-lastmod = 2019-12-03T17:20:43+09:00
+lastmod = 2019-12-05T18:08:46+09:00
 weight = 2001
 draft = false
 +++

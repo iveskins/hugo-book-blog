@@ -508,8 +508,112 @@ and efficient.
 ****** Typing things like づ
 *** Research
 **** Zoreto
+** DONE What is a language for creating interactive stories?
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: what-is-a-language-for-creating-interactive-stories
+   :END:
+ Its [[https://github.com/inkle/ink/blob/master/Documentation/WritingWithInk.md][ink]].
+
+I can imagine using this to make an interacive story to run on a ebook
+reader navigating through black and white images.
+or [[https://www.pubcoder.com/Features/Interactivity][pubcoder]] or [[https://www.apple.com/ibooks-author/][apple ibook?]] or [[https://www.kotobee.com/blog/how-create-interactive-ebook-guide/][kotobee]]
+or [[https://twinery.org/][Twine]] which is from the [[https://iftechfoundation.org/][Interactive Fiction Technology Foundation.]]
+.. and used to make this cool interactive browser experience
+[[https://pippinbarr.com/games/burntmatches/][burnt matches]]. [[https://www.pippinbarr.com/2016/11/29/burnt-matches/][morehere]] 
+
+or to use with children in a coding skills and language development
+situation. because it's so language bassed.. and then makes
+interacctive content which encourages revision.. and the writing part
+is like accuracy focused output .. and making a game is like
+.. naturally you adapt from something else .. so there is pleanty of
+chance to look at example text and adopt practical genre bassed
+language patterns from it .. and re-write in your own way.. and there
+is also the integration with art.. making assets for this game .. and
+the coding language is very shallow learning curve but goes into
+introducing some of the concepts of logical code thinking in a very
+understandable ways..
+** DONE News and research sources 2019/12/05
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: japane-news-and-research-sources
+   :END:
+*** Journals and information organisations
+    - [[https://apjjf.org/2019/19/Temocin.html][Asia-pacific journal]] with a japan focus. [[https://apjjf.org/admin][here]] has a list of
+      articles and books.
+    - [[http://peacephilosophy.blogspot.com/p/about-peace-philosophy-centre.html][peach philosophy centre]]. Links to journals atleast.. 
+    - [[https://antiracism-info.com/][Advocacy for antiracism]] group
+*** Studies about automatic detection of hate speech.
+    - [[https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0221152][Hate speech detection: Challenges and solutions]]
+    - 
+    -
+*** SPEECH Computing
+    - [[https://medium.com/@klintcho/creating-an-open-speech-recognition-dataset-for-almost-any-language-c532fb2bc0cf][Creating an open speech recognition dataset for (almost) any
+      language]]. This is a very detailed instructions on using audio
+      books to make speech traning data
+    - 
+*** Headless CMS
+    - [[https://sheetsu.com/][Sheetsu]] with a japanese spelling form some reason.. uses google
+      sheets as the source of data to make pages and tables and things
+      .. could be useful for a toastmasters type situation where there
+      is a static page to be made every month for the agenda
+      etc.. that just needs data changed .. and has a lot of not tech
+      fluent users - I found it here in this blog post about [[https://bejamas.io/blog/headless-cms/][headless cms]]
+
+*** Non-centralised social web
+    I found out about the [[https://indieweb.org/][Indiweb wiki]] which says it is "The IndieWeb
+    is a people-focused alternative to the "corporate web".". There I
+    read about [[https://indieweb.org/pingback][pingbacks]] and [[https://indieweb.org/webmention.io][webmentions]]. Which seems to be a way of
+    linking together websites or blogs that make mentions of each
+    other in their writings. so I dont need twitter or facebook as a
+    gobetween. I found out about it from
+    [[https://paul.kinlan.me/using-web-mentions-in-a-static-sitehugo-/][This blog]] by Paul Kinlan talking about how to implement it in a
+    hugo site.. which seems to involve some code for including the
+    things on the page,.. and then some extra code in your static site
+    build stage to go and find or send out mentions. I think Paul
+    Kinlan is a chrome developer, and I found him reading about
+    progressive web apps as an way for web developers to appeal to
+    users who are being entraped by app walled gardens of in app
+    browsers and no external links etc.
+
+*** IT stuff
+    [[https://www.ombulabs.com/blog][The ombulabs]] blog has many intersting looking articles about how
+    to work well in it, and test code, upgrade rails, etc. very
+    sharing way of working .. if you can do something .. why not do it
+    well, document and share it and sell it as a consultancy service
+    .. that the kind of transparent working style that seems very
+    sustainable for everyone involved
+
+    - [[https://withkoji.com/docs/tutorials/creating-your-first-custom-vcc][Koji]] is s code remixing platform trying to be the youtube of
+      code.. they are paying for simple games to seed their library.
+
+*** Interactive text
+    - [[https://twinery.org/][Twine is an open-source tool for telling interactive, nonlinear
+      stories.]] which looks pretty flexible .. it was used to make the
+      game [[http://www.pippinbarr.com/2016/11/29/burnt-matches/][Burnt matches]] by the media researcher Pippin Barr.
+      Which was a mix of text and interface and browser animation
+      [[http://www.speculativeplay.com/about/][speculative play]] also looks interesting.
+      Which I read about when reading about how to make an interactive
+      epub [[https://www.kotobee.com/blog/how-create-interactive-ebook-guide/][here]] . I was thinking of how I could use my ereader in a
+      more interesting way to navigate around some black and white
+      photos.. or maybe use them to make an ereader point and click
+      adventure game.. so I was readign about publishing tools for
+      interactive epubs .. because Im not sure how advance the browser
+      is on a kobo.. for handling normal html.. that page has a list
+      of publishing tools that can out put as interactive epub. mostly
+      as self promotion of itself Kotobee Author.
+      if kobo can handle html5.. it might be worth looking into html
+      game [[http://html5gameengine.com/][engines]]
+
+    - Ink [[https://github.com/inkle/ink/blob/master/Documentation/WritingWithInk.md][ink]] also seems to be a very full featured game writing
+      language like twine .. for pathed stories
+
+    - [[https://vagrantcursor.wordpress.com/2018/01/02/tools-to-make-narrative-games/][a list here]] of tools to make interactive text
 
 
+
+
+*** List of games researches
+    [[http://www.kmjn.org/game-rankings/][here]] . including my old lecturer .. found this by cross searching
+    his name and the developer of burnt matches.
 * Emacs                                                              :@emacs:
 All posts in here will have the category set to /emacs/.
 ** TODO Writing Hugo blog in org                                   :hugo:org:
