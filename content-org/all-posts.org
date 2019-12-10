@@ -8,6 +8,7 @@
 
 # do =C-c C-e H H= to export just this post.
 
+
 * Ideas
 ** DONE About this site
    :PROPERTIES:
@@ -614,6 +615,130 @@ understandable ways..
 *** List of games researches
     [[http://www.kmjn.org/game-rankings/][here]] . including my old lecturer .. found this by cross searching
     his name and the developer of burnt matches.
+** DONE whats the story with Yahoo groups?
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: yahoo-groups
+   :END:
+   yahoo sent short notice that they were deleting all their groups
+   data, and didn't make good tools for downloading it beforehand.
+   it will all be deleted on december 14th.
+
+*** What are the tools to help the archivers get it?
+    there is a tool to answer captures to join public groups, and then
+    give that account to the archvie team.
+    [[https://github.com/davidferguson/yahoogroups-joiner/archive/master.zip][download]] it here.
+
+*** how can I archive myself?
+    [[https://github.com/IgnoredAmbience/yahoo-group-archiver][This python script]] can archive groups. I guess you need to join
+    them for it to work well.. I spun up an ec2 instance to try and
+    save a few groups from communities I would have been interested in
+    back in the 2000s.
+
+*** Where can I read more?
+    [[https://news.ycombinator.com/item?id=21737696][hacker news]], [[https://modsandmembersblog.wordpress.com/2019/12/08/verizon-yahoo-bad-form/][the group leading the archive effort]]
+** DONE critical Interface projects 
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: critical-interface-projects
+   :END:
+*** Whats that idea you had about a poem from source code?
+    you read on [[https://news.ycombinator.com/item?id=19672436][hackernews]] that the source-code for ZORK1 had been
+    uploaded to [[https://github.com/historicalsource?tab=repositories][gitlab]], and there was discussion of an unpublished
+    hitchhikers guide sequel. Someone linked to the [[https://github.com/historicalsource/restaurant/blob/master/people.zil#L265-L268][Zaphod source]]. 
+    this had a bit like
+    #BEGIN_SRC
+    <CONSTANT LDESC-STRINGS
+ <PLTABLE	"dancing"
+		"sipping sherry"
+	;3	"watching you" ;"talking quietly"
+		"looking at you with suspicion"
+		0 ;"gazing out the window"
+	;6	"walking along"
+		"sobbing quietly"
+		"poised to attack"
+	;9	"waiting patiently"
+		"eating with relish"
+		"preparing dinner"
+	;12	"listening to you"
+		"lounging and chatting"
+		"asleep"
+	;15	0 ;"reading a note"
+		"listening"
+		"preparing to leave"
+	;18	"deep in thought"
+		"out cold"
+		"ignoring you"
+	;21	"searching"
+		"playing the piano"
+		"following you"
+	;24	"brushing her hair"
+		"looking sleepy">>
+    #END_SRC
+ 
+which was kind of poetic. atleast in layout.. and It made you think
+this was a vein that could be mined for artistic expression.
+** DONE reduce gitlab memory for docker
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: reduce-gitlab-memory-for-docker
+   :END:
+  - omnibus
+        unicorn['worker_processes'] = 3
+        postgresql['shared_buffers'] = "256MB"
+        gitlab_rails['db_prepared_statements'] = false
+        sidekiq['concurrency'] = 15 #25 is the default
+        prometheus_monitoring['enable'] = false
+
+	2.2 -> 1.7 G
+** DONE Ai writing
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: ai-writing
+   :END:
+*** What was that site to plat with the GPT-2 text generation?
+    [[https://www.theverge.com/tldr/2019/5/13/18617449/ai-text-generator-openai-gpt-2-small-model-talktotransformer][here]] is the blog that talks about it [[https://talktotransformer.com/][here]] is the site. There is
+    alot of capchas 
+** DONE find the files thats being written
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: find-the-files-thats-being-written
+   :END:
+*** How do you find which file recursively is the most recent modified in a folder?
+    #BEGIN_SRC bash
+    find $DIR -type f -printf "%T@ %p\n" | sort -n | cut -d' ' -f 2- | tail -n 1
+    #END_SRC
+    from [[https://stackoverflow.com/questions/1015678/get-most-recent-file-in-a-directory-on-linux][here]]
+** DONE What was that old guy taling about emacs?
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: what-was-that-old-guy-taling-about-emacs
+   :END:
+   [[http://www.bobnewell.net/publish/35years/index.html][Bob newell]] has some good writing about the simple joys of emacs.
+** DONE CLI flashcards
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: cli-flashcards
+   :END:
+ Someone asked on reddit linuxquestions about a commandline tool for
+ doing flashcard revision like quizlet. I had a look into it thinking
+ Immediatly of ANKI and emacs org mode. There is a tool to
+ [[https://github.com/louietan/anki-editor][edit anki cards in emacs]]. There is a [[https://orgmode.org/worg/org-contrib/org-drill.html][Drill]] minor mode for org that
+ lets you do flashcards and srs.
+ #BEGIN_QUOTE
+Org-Drill is an extension for Org mode. Org-Drill uses a spaced
+ repetition algorithm to conduct interactive "drill sessions", using
+ org files as sources of facts to be memorised. Each topic is treated
+ as a "flash card". The material to be remembered is presented to the
+ student in random order. The student rates his or her recall of each
+ item, and this information is used to schedule the item for later
+ revision.
+#END_QUOTE
+There is also [[https://github.com/abo-abo/pamparam][Pamparam]] "a new spaced repetition (SR) memory cards
+ implementation for Emacs." which is under development recently.
+** DONE What was that young musician you heard?
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: what-was-that-young-musician-you-heard
+   :END:
+*** On wfmu? 
+    [[http://michaelshelley.net/juniper/][Juniper]] sining cheesy xmas songs and that "BOYS! BOYS! BOYS!
+    BOYS! BOYS!" song which could come in handy if anyone ever askes
+    my to teach english singing to young persons again.
+
+
 * Emacs                                                              :@emacs:
 All posts in here will have the category set to /emacs/.
 ** TODO Writing Hugo blog in org                                   :hugo:org:

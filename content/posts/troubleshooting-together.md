@@ -1,7 +1,7 @@
 +++
 title = "Troubleshooting together"
 author = ["T", "Ivan"]
-lastmod = 2019-12-05T18:08:48+09:00
+lastmod = 2019-12-10T18:30:53+09:00
 weight = 2007
 draft = false
 +++
