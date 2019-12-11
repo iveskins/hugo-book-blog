@@ -487,9 +487,24 @@ and efficient.
       - Emoji
 ***** MacOS
 ***** Google japanese Input 
+      All my current dictionaries can be found it [[https://github.com/iveskins/google.input.dic][this git repo]]
+      I can't remember how I made them. but I am sure I just formatted
+      other peoples files in a way that can be inported to google
+      input.
+      e.g:
+****** JAP-ENG
+       There is a dictionary for displaying the English meaning of
+       words typed in Japanse. useful
+       [[/images/ja-eng-words.png]]
+       and a dictionary for translating words typed in Japanse to
+       English. not too useful for me.
+       [[/images/ja-ja-eng.png]]
 ****** Emoji dictionary
        [[https://gist.github.com/iveskins/4b0c620f3e51968ff67453ac78f2fb59][here]] is a gist of the dictionary file.
        Like this: [[/images/emoji.input.png]]
+       [[/images/emoji.@.emoji.png]]
+       [[/images/emoji.icons.input.png]]
+
 
 ***** Where to get what
 ****** EPWING

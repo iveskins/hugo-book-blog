@@ -1,7 +1,7 @@
 +++
 title = "Terminal Tools"
 author = ["T", "Ivan"]
-lastmod = 2019-12-11T13:30:53+09:00
+lastmod = 2019-12-11T14:04:45+09:00
 weight = 2012
 draft = false
 +++
@@ -174,10 +174,27 @@ iterm, and other terminal apps to allow for preview of images.
 
 #### Google japanese Input {#google-japanese-input}
 
+All my current dictionaries can be found it [this git repo](https://github.com/iveskins/google.input.dic)
+I can't remember how I made them. but I am sure I just formatted
+other peoples files in a way that can be inported to google
+input.
+e.g:
+
+-   JAP-ENG
+
+    There is a dictionary for displaying the English meaning of
+    words typed in Japanse. useful
+    {{<figure src="/images/ja-eng-words.png">}}
+    and a dictionary for translating words typed in Japanse to
+    English. not too useful for me.
+    {{<figure src="/images/ja-ja-eng.png">}}
+
 -   Emoji dictionary
 
     [here](https://gist.github.com/iveskins/4b0c620f3e51968ff67453ac78f2fb59) is a gist of the dictionary file.
     Like this: {{<figure src="/images/emoji.input.png">}}
+    {{<figure src="/images/emoji.@.emoji.png">}}
+    {{<figure src="/images/emoji.icons.input.png">}}
 
 
 #### Where to get what {#where-to-get-what}
