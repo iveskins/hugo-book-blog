@@ -1,7 +1,7 @@
 +++
 title = "Terminal Tools"
 author = ["T", "Ivan"]
-lastmod = 2019-12-11T13:18:34+09:00
+lastmod = 2019-12-11T13:21:06+09:00
 weight = 2012
 draft = false
 +++
@@ -176,9 +176,14 @@ iterm, and other terminal apps to allow for preview of images.
 
 -   Emoji dictionary
 
-           [here](https://gist.github.com/iveskins/4b0c620f3e51968ff67453ac78f2fb59) is a gist of the dictionary file
-    you could embed this with  "#+html: {{< gist iveskins
-    4b0c620f3e51968ff67453ac78f2fb59 >}}" but it is 7000 lines long and
+    [here](https://gist.github.com/iveskins/4b0c620f3e51968ff67453ac78f2fb59) is a gist of the dictionary file you could embed this with:
+
+    \#BEGIN\_SRC
+
+    {{< gist iveskins 4b0c620f3e51968ff67453ac78f2fb59 >}}
+
+    \#END\_SRC
+    But it is 7000 lines long and
     you dont have css to make it have a scroll bar.
 
 
