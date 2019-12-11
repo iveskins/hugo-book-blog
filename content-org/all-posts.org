@@ -487,13 +487,7 @@ and efficient.
 ***** MacOS
 ***** Google japanese Input 
 ****** Emoji dictionary
-       [[https://gist.github.com/iveskins/4b0c620f3e51968ff67453ac78f2fb59][here]] is a gist of the dictionary file you could embed this with:
-
-#BEGIN_SRC 
-#+html: {{< gist iveskins 4b0c620f3e51968ff67453ac78f2fb59 >}}
-#END_SRC
-But it is 7000 lines long and
-you dont have css to make it have a scroll bar.
+       [[https://gist.github.com/iveskins/4b0c620f3e51968ff67453ac78f2fb59][here]] is a gist of the dictionary file.
 
 ***** Where to get what
 ****** EPWING
@@ -775,6 +769,13 @@ subtree, do =C-c C-e H H= to export just this post.
 
 The exported Markdown has a little comment footer as set in the /Local
 Variables/ section below.
+**** using hugo shortcodes
+     https://github.com/kaushalmodi/ox-hugo/issues/242
+
+#+BEGIN_SRC 
+#+html: {{< gist iveskins 4b0c620f3e51968ff67453ac78f2fb59 >}}
+#+END_SRC
+
 * Footnotes
 * COMMENT Local Variables                                           :ARCHIVE:
 # Local Variables:

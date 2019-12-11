@@ -1,7 +1,7 @@
 +++
 title = "What was that chinese open source project to make RSS feeds from websites?"
 author = ["T", "Ivan"]
-lastmod = 2019-12-11T12:04:31+09:00
+lastmod = 2019-12-11T13:23:55+09:00
 weight = 2011
 draft = false
 +++

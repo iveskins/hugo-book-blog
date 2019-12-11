@@ -2,7 +2,7 @@
 title = "Writing Hugo blog in org"
 author = ["T", "Ivan"]
 date = 2017-09-10
-lastmod = 2019-12-11T12:04:36+09:00
+lastmod = 2019-12-11T13:23:59+09:00
 tags = ["hugo", "org"]
 categories = ["emacs"]
 weight = 2001
@@ -39,3 +39,12 @@ subtree, do `C-c C-e H H` to export just this post.
 
 The exported Markdown has a little comment footer as set in the _Local
 Variables_ section below.
+
+
+### using hugo shortcodes {#using-hugo-shortcodes}
+
+<https://github.com/kaushalmodi/ox-hugo/issues/242>
+
+```nil
+#+html: {{< gist iveskins 4b0c620f3e51968ff67453ac78f2fb59 >}}
+```
