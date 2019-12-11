@@ -1,7 +1,7 @@
 +++
 title = "Terminal Tools"
 author = ["T", "Ivan"]
-lastmod = 2019-12-11T13:23:55+09:00
+lastmod = 2019-12-11T13:30:53+09:00
 weight = 2012
 draft = false
 +++
@@ -177,6 +177,7 @@ iterm, and other terminal apps to allow for preview of images.
 -   Emoji dictionary
 
     [here](https://gist.github.com/iveskins/4b0c620f3e51968ff67453ac78f2fb59) is a gist of the dictionary file.
+    Like this: {{<figure src="/images/emoji.input.png">}}
 
 
 #### Where to get what {#where-to-get-what}

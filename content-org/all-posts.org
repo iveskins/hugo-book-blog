@@ -15,12 +15,13 @@
    :EXPORT_FILE_NAME: about-this-site
    :END:
 *** Whats is this?
+
     This a blog. It is edited in emacs org. It is exported to MD by
     [[https://ox-hugo.scripter.co/][ox-hugo]], and generated into a static site with Hudo, using the
     book theme. I wanted a way to make my many and various notes in my
     org journal more centralised, and more useful in the future.  
     I like the book theme because it has a TOC. I am a fan
-    of the Cornell note taking system. [[/images/cornell.webp.png]] 
+    of the Cornell note taking system. [[/images/cornell.webp.png]]
     Cornell notes have a focus on revision and skim-ability. I wanted
     a blog site where I had a TOC I could use like the left hand
     "keyword" column of this note system. That is to say. cover the
@@ -488,6 +489,7 @@ and efficient.
 ***** Google japanese Input 
 ****** Emoji dictionary
        [[https://gist.github.com/iveskins/4b0c620f3e51968ff67453ac78f2fb59][here]] is a gist of the dictionary file.
+       Like this: [[/images/emoji.input.png]]
 
 ***** Where to get what
 ****** EPWING
@@ -772,9 +774,10 @@ Variables/ section below.
 **** using hugo shortcodes
      https://github.com/kaushalmodi/ox-hugo/issues/242
 
-#+BEGIN_SRC 
+g#+BEGIN_SRC 
 #+html: {{< gist iveskins 4b0c620f3e51968ff67453ac78f2fb59 >}}
 #+END_SRC
+**** Using images
 
 * Footnotes
 * COMMENT Local Variables                                           :ARCHIVE:
