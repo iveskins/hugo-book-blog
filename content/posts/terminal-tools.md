@@ -1,7 +1,7 @@
 +++
 title = "Terminal Tools"
 author = ["T", "Ivan"]
-lastmod = 2019-12-11T12:00:40+09:00
+lastmod = 2019-12-11T12:04:32+09:00
 weight = 2012
 draft = false
 +++
@@ -178,6 +178,8 @@ iterm, and other terminal apps to allow for preview of images.
 
     {{< gist iveskins 4b0c620f3e51968ff67453ac78f2fb59 >}}
 
+    <script src="https://gist.github.com/iveskins/4b0c620f3e51968ff67453ac78f2fb59.js"></script>
+
 
 #### Where to get what {#where-to-get-what}
 
@@ -201,7 +203,7 @@ iterm, and other terminal apps to allow for preview of images.
 -   Mac Linguist
 
 
-### Study {#study}
+### Studya {#studya}
 
 
 #### Flashcards {#flashcards}
