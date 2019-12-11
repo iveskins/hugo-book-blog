@@ -1,7 +1,7 @@
 +++
 title = "Terminal Tools"
 author = ["T", "Ivan"]
-lastmod = 2019-12-10T18:30:55+09:00
+lastmod = 2019-12-11T12:00:40+09:00
 weight = 2012
 draft = false
 +++
@@ -173,6 +173,10 @@ iterm, and other terminal apps to allow for preview of images.
 
 
 #### Google japanese Input {#google-japanese-input}
+
+-   Emoji dictionary
+
+    {{< gist iveskins 4b0c620f3e51968ff67453ac78f2fb59 >}}
 
 
 #### Where to get what {#where-to-get-what}

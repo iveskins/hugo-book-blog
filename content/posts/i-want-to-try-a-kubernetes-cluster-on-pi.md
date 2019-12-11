@@ -1,7 +1,7 @@
 +++
 title = "I want to try a Kubernetes cluster on Pi"
 author = ["T", "Ivan"]
-lastmod = 2019-12-10T18:30:52+09:00
+lastmod = 2019-12-11T12:00:36+09:00
 weight = 2004
 draft = false
 +++

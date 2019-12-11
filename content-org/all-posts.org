@@ -486,6 +486,9 @@ and efficient.
       - Emoji
 ***** MacOS
 ***** Google japanese Input 
+****** Emoji dictionary
+#+html: {{< gist iveskins 4b0c620f3e51968ff67453ac78f2fb59 >}}
+
 ***** Where to get what
 ****** EPWING
 ****** JSON
