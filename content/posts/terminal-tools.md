@@ -1,7 +1,7 @@
 +++
 title = "Terminal Tools"
 author = ["T", "Ivan"]
-lastmod = 2019-12-11T14:04:45+09:00
+lastmod = 2019-12-11T14:17:30+09:00
 weight = 2012
 draft = false
 +++
@@ -21,11 +21,13 @@ highlighting, and in / out filtering, that makes it realy quick
 to understand the information in a log file. What is good about
 it, is that it is powerful like having a log agergation platform,
 but it is just a lightweight command line application.
+{{<figure src="/images/screenshot.lnav.png">}}
 
 
 ### Htop {#htop}
 
 is better than top
+{{<figure src="/images/screenshot.htop.png">}}
 
 
 ### [Ranger](https://ranger.github.io/) {#ranger}
@@ -33,6 +35,7 @@ is better than top
 Is a "A VIM-inspired filemanager for the console". It can be used
 for very quick navigation of files. it also integrates with
 iterm, and other terminal apps to allow for preview of images.
+{{<figure src="/images/screenshot.ranger.png">}}
 
 
 ### NVIM {#nvim}

@@ -418,12 +418,15 @@ and efficient.
      to understand the information in a log file. What is good about
      it, is that it is powerful like having a log agergation platform,
      but it is just a lightweight command line application.
+     [[/images/screenshot.lnav.png]]
 **** Htop
      is better than top
+     [[/images/screenshot.htop.png]]
 **** [[https://ranger.github.io/][Ranger]]
      Is a "A VIM-inspired filemanager for the console". It can be used
      for very quick navigation of files. it also integrates with
      iterm, and other terminal apps to allow for preview of images.
+     [[/images/screenshot.ranger.png]]
 **** NVIM
 ***** plugins
 ****** Nerdtree
