@@ -487,8 +487,11 @@ and efficient.
 ***** MacOS
 ***** Google japanese Input 
 ****** Emoji dictionary
-#+html: {{< gist iveskins 4b0c620f3e51968ff67453ac78f2fb59 >}}
-#+html: <script src="https://gist.github.com/iveskins/4b0c620f3e51968ff67453ac78f2fb59.js"></script>
+       [[https://gist.github.com/iveskins/4b0c620f3e51968ff67453ac78f2fb59][here]] is a gist of the dictionary file
+you could embed this with  "#+html: {{< gist iveskins
+4b0c620f3e51968ff67453ac78f2fb59 >}}" but it is 7000 lines long and
+you dont have css to make it have a scroll bar.
+
 ***** Where to get what
 ****** EPWING
 ****** JSON
@@ -498,7 +501,7 @@ and efficient.
 ****** Yomichan
 ***** Whole OS
 ****** Mac Linguist
-**** Study
+**** Studya
 ***** Flashcards
 ****** Anki
 ******* Deck types
