@@ -760,7 +760,319 @@ There is also [[https://github.com/abo-abo/pamparam][Pamparam]] "a new spaced re
     [[http://michaelshelley.net/juniper/][Juniper]] sining cheesy xmas songs and that "BOYS! BOYS! BOYS!
     BOYS! BOYS!" song which could come in handy if anyone ever askes
     my to teach english singing to young persons again.
+** DONE Reading
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: reading
+   :END:
+*** Read about political speech and heckling
+    From [[https://its.law.nyu.edu/facultyprofiles/index.cfm?fuseaction=profile.publications&personid=26993][Jeremy Waldron]] which i read about here in the context of what
+    makes [[https://www.guernicamag.com/anatomy-of-a-successful-campus-talk/][a good campus speech]]
+*** Product market fit
+    [[https://a16z.com/2017/02/18/12-things-about-product-market-fit/]] via
+    [[https://a16z.com/2019/12/09/product-zeitgeist-fit/]]
 
+
+** DONE How can I trust any code?
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: trusting_code
+   :END:
+   [[https://security.stackexchange.com/questions/222457/how-am-i-ever-going-to-be-able-to-vet-120-000-lines-of-composer-php-code-not][This]] discussion on security.stackexchange talks about the use of
+   other people libraries in your code and what to do about the fact
+   that you didnt write it yorself.. and there is too mush code to
+   review it line by line.. how can you be sure of secuiriy
+   - you can't, but you have to think about how sensitive your data /
+     system is.
+   - if you can't audit the code, you can audit the people releasing
+     it, and their release methods, and their past action about
+     security issues.. in short you can assess how trust worthy they
+     might be
+   - writing everythign yourself and reviewing it yourself isn't a way
+     to manufacture security anyway.. because you can make
+     mistakes.. isn't it better to use a popular library that lots of
+     people use, and experts in the minutia of that field have
+     written?
+   - There is a [[https://dl.acm.org/citation.cfm?id=358210][book]] /Reflections on trusting trust/ - Ken Thompson
+     (1984) that is some of the though on this issue from the early
+     days of software
+** DONE Can I stop an RDS instance for more than 7 days?
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: can-i-stop-an-rds-instance-for-more-than-7-days
+   :END:
+
+
+*** Google
+    - https://cloudiknow.com/rds-stopped-for-more-than-7-days/
+    - https://github.com/awslabs/aws-instance-scheduler/issues/42
+
+*** Looks like.
+    - can use Cloudwatch scheduled tasks
+    - Can use maintenance windows of rds to start and stop and reset
+      7day timer?
+
+
+*** Maybe it's better to delete it if its not being used..
+    and take a snapshot.
+    that seems to be the design on the system
+    if we cant do that then we need to increase our capabilities and
+    knowlege.
+    - how to restore 
+      - https://www.youtube.com/watch?v=fxNmMQvOjbA
+    - What is the cost of keeping a snapshot around?
+    - What will this mean in a COC defined environemnt
+      - the deletion should problaly be made by a code chagne..
+	becuase even if you put back a new db with all the same
+        setting
+	the ids of the db will have changed, and terraform wouldnt
+        recognise the database as the one it made
+
+
+*** Make it
+**** 
+
+  default     = "cron(0 9 ? * MON-FRI *)"
+} # stop every weekday at 18:00JST+9
+
+variable "start_schedule_expression" {
+  description = "Schedule for lambda execution"
+  default     = "cron(50 23 ? * SUN-THU *)"
+} # start every weekday at 08:50JST+9
+
+
+** DONE Are good-faith communities possible on the internet anymore?
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: are-good-faith-communities-possible-on-the-internet-anymore
+   :END:
+*** Factors
+    - Organised bad-faith actors
+      - State backed troll farms
+      - ideological group backed organised actors
+    - Increased diversity of internet users
+      - backgrounds
+      - social norms
+      - language
+      - knowledge
+    - Generational changes in social interaction norms
+      - technological mediation, and there7s an multi-national
+        corporated developed app for that, leaning
+        to less developed social skills, and alientation,
+        disconnection from own location, reigon. cant imagine actually
+        calling a local business on the phone, and talking to a
+        person.. 
+    - Network effects??
+      - like chain recations.. The bad faith actors creating
+        situations were other groups create anti-community action even
+        though the do not share the same goals a the bad-faith group.
+    - Infulence of hegemonic battles in wider society
+      - increased polerisation, antagonism, politicalisation of
+        everyday life
+      - identiry politics 
+    - Unequal
+      - access to privacy and anonmyity
+      - knowledge and skills in the used of tech
+      - knowleged and skill in the use of new media 
+      - levels of organisation and focus
+	- one side thinks this is a culture war
+	- the other side isnt aware there is a war going on
+      - levels of radicalized resoorting to violence
+** Voices
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: radio-voice
+   :END:
+*** What was that radio presenter with the archtypical radio voice?
+    - RIP harry HARRY HARRISON.
+    - On CBS fm.
+    - https://www.youtube.com/watch?v=jQ7r2P2cHDU
+** DONE Rpg systems where the player plays as a merchant or shopkeeper
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: rpg-systems-where-the-player-plays-as-a-merchant-or-shopkeeper
+   :END:
+*** Google
+    - https://forum.rpg.net/index.php?threads/merchant-rpg.441068/
+    - https://boardgamegeek.com/thread/1000184/fantasy-innkeeper
+    - less 
+** DONE How do I stop chrome going back when i two finger swipe on trackpad?
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: how-do-i-stop-chrome-going-back-when-i-two-finger-swipe-on-trackpad
+   :END:
+*** Problem
+    I keep losing data in forms and the like, by accidentially
+    trigging the browser to go back with a two finger swipe. this iis
+    because three finger swipe is the way to change desktops, so its
+    easy to misregister a finger and get a back. 
+*** solutions 
+
+ - Turn it off with a flag: Some places said to set a flag at
+  "chrome://flags/#overscroll-history-navigation". but this doesn't
+   seem to exist anymore.
+
+ - Turn if off with osx defaults
+  -
+    https://support.google.com/chrome/thread/5616407?hl=en&msgid=24668853 
+    For mac os x:defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool FALSE
+** DONE Where is the cloudwatch logs query syntax actually doccumented?
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: cloudwatch-logs-query-syntax
+   :END:
+
+  its [[https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_QuerySyntax.html][here]]. It is just hard to find. also 'like' should be followed by
+  regex in /'s 
+** DONE Links 2020 02 07
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: links-2020-02-07
+   :END:
+*** word regex
+ https://stackoverflow.com/questions/27349556/is-it-possible-to-check-if-a-word-is-really-an-english-word-via-regex
+ if re.match(r'^([^aeiouy]{1,3}[aeiouy]{1,3}[^aeiouy]{1,3}|[aeiouy]{1,3}[^aeiouy]{1,3})+
+     print "gobbledy gook!!!"
+*** Cool speaker 
+     Flat speaker from that movie theater. makes soft sound good for
+ ambience and detail 
+ http://taguchi-onken.com/product.html
+*** cloud training (expensive.. better than linkedin now maybe)
+https://acloud.guru/gcp-cloud-training
+** DONE How can run forked processes in bash
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: how-can-run-forked-processes-in-bash
+   :END:
+*** With gnue parallel
+    $ parallel -j 4 wget -q {} < list.txt
+
+https://www.cyberciti.biz/faq/how-to-run-command-or-code-in-parallel-in-bash-shell-under-linux-or-unix/
+
+like make all the voices of all languages speak at once bable style
+parallel -j 40 say -v {} (diceware -n 4 -d ' ') < voices.txt
+** DONE What was that document by the DOD on Agile
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: dod-on-agile
+   :END:
+ 
+*** It was this
+https://web.archive.org/web/20200204200102/https://media.defense.gov/2018/Oct/09/2002049591/-1/-1/0/DIB_DETECTING_AGILE_BS_2018.10.05.PDF
+
+*** Summary
+    - there is many things that claim to be agile, but are not realy
+      agile
+    - this document explains some key points to look at when trying to
+      detect is something is just saying it's agile.
+    - it provides some questions you could ask to a development team,
+      users, and other parties
+      to see if they are really using agile 
+    - It would be useful to someone trying to understand the real
+
+      nature of a project as oposed to the way it is described. 
+    - I can't beleive he keeps hitting the Enter button on that macbook like its
+      somekind of carnaval game. I don't keed to know how emphatically
+      you feel about your own trying.
+
+
+*** I found this Linked in An article about how website focused dev practices dont create stability
+    from this HN thread https://news.ycombinator.com/item?id=22309291
+    [[https://www.bitlog.com/2020/02/12/why-are-we-so-bad-at-software-engineering/][Here]] and arccive [[https://web.archive.org/web/20200215122420/https://www.bitlog.com/2020/02/12/why-are-we-so-bad-at-software-engineering/][Here]] 
+    to quote:
+    “I don’t quite know how to put this, but our entire field is bad at what we do, and if you rely on us, everyone will die.” Our industry’s mindset grew in an environment where failure is cheap and we are incentivized to move quickly.
+** DONE What are some Taskboard tools for project management?
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: taskboard-tools
+   :END:
+ 
+   - https://clubhouse.io/
+     A fast web bassed tool. free tier. All the agile bells and
+     whistles. 
+   - Ice scrum
+     Java app. Can self host it with docker. Is reasonably functional
+     for personal use.. Most advanced features not avalible in free
+     version. Nice UI
+   - Weka
+     I havn't used this in a while. there are many install options,
+     even a snap. putting it here So I don't forget the name
+   - Gitlab. also has these things.. but also alot more.. so its not
+     the lightweight solution here.. 
+   - Trello?
+   - And lots more.
+** DONE What was that alternative to Terraform that used general coding languages?
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: congif-as-code-tools
+   :END:
+ 
+   It was [[https://www.pulumi.com/docs/index.html][Plumi]]  
+   - Why Pulumi?
+   By using real languages for infrastructure as code, you get many
+   benefits: IDEs, abstractions including functions, classes, and
+   packages, existing debugging and testing tools, and more. The
+   result is greater productivity with far less copy and paste, and it
+   works the same way no matter which cloud you're targeting
+   
+   Maybe I should give it a try. Terrafrom's domaon specific langaige
+   is a bit special.
+** DONE Neural Net generated Music?
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: nng-music
+   :END:
+ 
+*** Metal
+    - https://dadabots.bandcamp.com/album/coditany-of-timeness
+      (and other from the same people http://dadabots.com/music.php)
+
+
+*** Melody
+    - open AI has [[https://www.openai.com/blog/musenet/][Musenet]] which can make melodies in the style of
+      diferenet artits
+
+
+    
+*** Notes.
+    - I was reading about it
+      [[https://news.ycombinator.com/item?id=22322408][on Hacker News]] Where they were talking about a generated rap
+      song. 
+    - Sometimes AI generated = the agl. spits out a huge amount of
+      stuff and some humans choose a few not bad examples from anoung
+      it all.
+    - [[https://news.ycombinator.com/item?id=22344254][Art]]
+** DONE China-news
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: china-news
+   :END:
+   [[https://jamestown.org/programs/cb/about-china-brief/][China Brief]] is a very indepth policy analisys level review of news
+   and politics out of China.
+** DONE Less wrong
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: less-wrong
+   :END:
+*** What is less wrong?
+    https://news.ycombinator.com/item?id=22323090
+    https://www.lesswrong.com/s/SGB7Y5WERh4skwtnb
+    less wrong is a collection of writings by, Eliezer Yudkowsky,
+    Robin Hanson, and others, on words and cognition, organised into
+    collections called Sequences.
+*** Not to be confused with 
+    MontyPython which was "do not adjust your set" meets "the 1948 show"
+** DONE links-2020-02-17
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: links-2020-02-17
+   :END:
+   - About PIA vpn sale and trust etc
+ https://news.ycombinator.com/item?id=21679682
+   - Art generated
+     https://art42.net/
+   - Langauge learning hacking
+     https://news.ycombinator.com/item?id=22341983
+     note: 
+     BTBurke 11 minutes ago [-]
+
+I don't believe there is a shortcut for "hacking" languages. I'm a diplomat, and currently learning my fourth language to the C1+ level.
+When we learn languages, it's a full time job. It was 9 months to learn Mandarin to a B1, 6 months to a C1+ in Spanish, and I'm currently at a B1 in Estonian after 5 months.
+
+There are several things I think are crucial after years of full time study (note: this assumes you're going for professional fluency, not just touring around the country where interactions are largely scripted and predictable):
+
+ There is no substitute for production - you must speak the language with a native speaker (not an app) and talk about topics that are relevant to the kind of scenarios you anticipate. We spend the first several months discussing current events in target language - at first scripted, then later free form. This builds vocabulary and helps fluency. This is quickly expanded to discussing current events in depth and participating in mock debates.
+
+ Give mini presentations - target 3-5 minutes of talking about a relevant topic with little prep time. The difference between intermediate and advanced is the ability to move from discussing only facts to making a coherent argument. Native speakers will often not be able to follow your train of thought without learning to connect cause and effect using structures appropriate for your language.
+
+ Interview native speakers - prepare 2-3 questions about a particular topic and check your comprehension by translating their answers to English. This obviously helps build your comprehension, but also helps to learn to "automate" comprehension while you are thinking about something else. If you can take notes in English while a native speaker is talking at normal speed (and achieving 90%+ accuracy), it will make it easier for you to participate in normal speed conversations.
+
+ Read target language news - this is critical for expanding vocabulary and learning colocations - knowing what verbs are used in particular contexts (e.g., do they say "I talked with X" or "I talked to X". Do they say country X shot, launched, or threw a rocket?)
+
+Bottom line - language learning is not just about the number of hours you put in. The quality and type of practice you do matters a lot. You aren't going to be fluent via Duolingo alone. You need to put in the time using structured practice with native speakers to really learn anything.
 
 * Emacs                                                              :@emacs:
 All posts in here will have the category set to /emacs/.
@@ -791,11 +1103,14 @@ The exported Markdown has a little comment footer as set in the /Local
 Variables/ section below.
 **** using hugo shortcodes
      https://github.com/kaushalmodi/ox-hugo/issues/242
+     https://gohugo.io/content-management/shortcodes/
 
-g#+BEGIN_SRC 
+#+BEGIN_SRC 
 #+html: {{< gist iveskins 4b0c620f3e51968ff67453ac78f2fb59 >}}
 #+END_SRC
 **** Using images
+     1. put them in the ./static/images/ folder
+     2. link them as /static/images/name surrounded by [[ s
 
 * Footnotes
 * COMMENT Local Variables                                           :ARCHIVE:
