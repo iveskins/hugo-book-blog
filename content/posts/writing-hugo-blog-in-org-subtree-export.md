@@ -2,7 +2,7 @@
 title = "Writing Hugo blog in org"
 author = ["T", "Ivan"]
 date = 2017-09-10
-lastmod = 2019-12-11T13:23:59+09:00
+lastmod = 2020-02-18T13:37:35+09:00
 tags = ["hugo", "org"]
 categories = ["emacs"]
 weight = 2001
@@ -44,7 +44,14 @@ Variables_ section below.
 ### using hugo shortcodes {#using-hugo-shortcodes}
 
 <https://github.com/kaushalmodi/ox-hugo/issues/242>
+<https://gohugo.io/content-management/shortcodes/>
 
 ```nil
 #+html: {{< gist iveskins 4b0c620f3e51968ff67453ac78f2fb59 >}}
 ```
+
+
+### Using images {#using-images}
+
+1.  put them in the ./static/images/ folder
+2.  link them as /static/images/name surrounded by [[ s

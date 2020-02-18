@@ -1,7 +1,7 @@
 +++
 title = "How do I troubleshoot RDS connectivity?"
 author = ["T", "Ivan"]
-lastmod = 2019-12-11T13:23:53+09:00
+lastmod = 2020-02-18T13:37:22+09:00
 weight = 2006
 draft = false
 +++

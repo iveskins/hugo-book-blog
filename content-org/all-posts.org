@@ -838,7 +838,7 @@ variable "start_schedule_expression" {
 } # start every weekday at 08:50JST+9
 
 
-** DONE Are good-faith communities possible on the internet anymore?
+** Done Are good-faith communities possible on the internet anymore?
    :PROPERTIES:
    :EXPORT_FILE_NAME: are-good-faith-communities-possible-on-the-internet-anymore
    :END:
@@ -883,7 +883,8 @@ variable "start_schedule_expression" {
     - On CBS fm.
     - https://www.youtube.com/watch?v=jQ7r2P2cHDU
 ** DONE Rpg systems where the player plays as a merchant or shopkeeper
-   :PROPERTIES:
+   :PROPE
+RTIES:
    :EXPORT_FILE_NAME: rpg-systems-where-the-player-plays-as-a-merchant-or-shopkeeper
    :END:
 *** Google
@@ -1073,7 +1074,14 @@ There are several things I think are crucial after years of full time study (not
  Read target language news - this is critical for expanding vocabulary and learning colocations - knowing what verbs are used in particular contexts (e.g., do they say "I talked with X" or "I talked to X". Do they say country X shot, launched, or threw a rocket?)
 
 Bottom line - language learning is not just about the number of hours you put in. The quality and type of practice you do matters a lot. You aren't going to be fluent via Duolingo alone. You need to put in the time using structured practice with native speakers to really learn anything.
-
+** TODO 2020-02-18-links
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: 2020-02-18-links
+   :END:
+*** Discussion of VPNs and aws 
+    [[https://www.reddit.com/r/aws/comments/f2t9ds/aws_client_vpn_seems_like_a_rip_off_no/][Reddit]]
+    TIL:
+    - 
 * Emacs                                                              :@emacs:
 All posts in here will have the category set to /emacs/.
 ** TODO Writing Hugo blog in org                                   :hugo:org:
