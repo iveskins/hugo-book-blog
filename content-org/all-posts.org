@@ -70,7 +70,7 @@
 **** Alternatives
 ***** Hosting
       - https://zeit.co/
-
+	
 ** DONE Epwing dictionaries
    :PROPERTIES:
    :EXPORT_FILE_NAME: epwing-dictionaries
@@ -1078,10 +1078,104 @@ Bottom line - language learning is not just about the number of hours you put in
    :PROPERTIES:
    :EXPORT_FILE_NAME: 2020-02-18-links
    :END:
+*** SSM Session manager for aws
+    This is a way to access aws things like EC2 instances without the
+    need for having a network ingress to port 22 and ssh.
+    It is manage by IAM and policies. So it is easier to audit than
+    SSH keys
+    It is not as good as ssh for tunneling and scp so
+    [[https://github.com/elpy1/ssh-over-ssm][Here is a way to use it to connect to ssh]] 
+
 *** Discussion of VPNs and aws 
+    With all the news of global epidemics, it reminded me that the
+    office I am in at the moment 
     [[https://www.reddit.com/r/aws/comments/f2t9ds/aws_client_vpn_seems_like_a_rip_off_no/][Reddit]]
     TIL:
-    - 
+    - AWS managed services are expensive. There is angry abusive
+      reddit debate over if it is cheaper to pay engineers to make one
+      on your own ec2 instances, or to pay for a managed VPN.
+      [[https://aws.amazon.com/vpn/pricing/][AWS vpn pricing]]
+    - If VPN is a critical thing, then there is an advantage to using
+      the ASW service, in terms of avaliability and scaling etc
+    - there are diferences in the pricing. OpenVPN charges per seat,
+      otehrs might charge for uptime and throughput.
+    - In a mass-surveilance world, why would I trust AWS VPN not to
+      have a backdoor?
+    - [[https://pritunl.com/#promo][pritunl]] is a commercial OpenVPN wrapper
+      - Pritunl has a free version that's excellent for simple use
+        cases,
+    - "would it be cheaper to just make a cloud formation template to
+     spin up my own version of this service on demand?"
+    - https://github.com/joshmcgrath08/openvpn_on_ec2
+      - explains how to make an ec2 instance with openVPN, and the
+          template automatees to the extent that you also get a
+          download link for the credentials needed to sign into it.
+    - https://github.com/hwdsl2/docker-ipsec-vpn-server
+      - or a docker image for ipsec server
+*** The port-knocking on AWS
+    the goal would be to keep your logs from being filled with junk
+    noise of auto scans. but still have a service online when you
+    needed it
+    [[https://www.reddit.com/r/aws/comments/6yks6t/the_portknock_protocol_and_aws_security_groups/][Reddit thread]] here.
+    I was interested in this because of the idea of having an endpoint
+    that you could call to add your current IP adress to a security
+    group through a lambda function or something .. then let yourself
+    into your ssh port, or what have you. but tunneling through
+    session manager might be another option.
+    - [[https://github.com/erik/holepunch][hole punch]] seems to do this
+** DONE Fonts
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: fonts
+   :END:
+*** Learn about webfonts from HN discussion.
+    - https://news.ycombinator.com/item?id=22368247
+
+*** Why are web fonts used?
+    webfonts are used because fonts are considered intelectual
+    proprty, and have restrictive licensing. If a web designer wants
+    to use a font on a webpage it can be a big prblem to get the
+    licence to use it. by using a font api, you are using fonts that
+    are already licenced by google.
+    web fonts are also a way to make traffic more efficient, because
+    many sites would be sharing the same font data, so they can be
+    cached easier
+    it also means that only google gets to track you data, and not
+    lots of diferent font providers
+    without them we would be limited to looking at web pages in fonts
+    that are installed on the OS, and OSes all have diferent sets of
+    fonts, so pages would look diferent on diferent systems
+
+*** What fonts are on all systems?
+    there are a few microsoft fonts that were released in the 90s that
+    can be found on linux to, but they have to be installed from a CAB
+    file.
+
+*** Spirals as base for font design
+    basically bu variying the value of a curve equation you can get
+    many types of curves, these curves can be put together in
+    descretly to make a shape. This work is about using a sipral
+    equation to make up fonts that look nice.
+
+    A man who worked on the google font project at launch, Raph
+    Levien, wrote a [[https://levien.com/phd/phd.html][PHD thesis]] called "From Spiral to Spline: Optimal
+    Techniques in Interactive Curve Design". 
+    "The Euler spiral is an excellent choice for this generator
+    curve."
+    "the properties of the various interpolating splines
+    explored in this thesis, to facilitate choosing the best one for
+    any given application. In using these splines for drawing a
+    number of fonts, I also found they brought an aesthetic quality to
+    the work." 
+** TODO Discontinuities
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: discontinuities
+   :END:
+*** What was that site that had logs of graphs showing discontinious data and its implications
+    https://danluu.com/discontinuities/
+    for instance, the rigged voting in russia can be seen by the round
+    numbers of voter regidtered at polling stations.
+    [[https://news.ycombinator.com/item?id=22378555][via HN]]
+    
 * Emacs                                                              :@emacs:
 All posts in here will have the category set to /emacs/.
 ** TODO Writing Hugo blog in org                                   :hugo:org:
