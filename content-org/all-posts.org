@@ -434,6 +434,13 @@ and efficient.
 ***** Config
 **** Emacs
 ***** Aquamacs
+**** Termshark
+     [[https://github.com/gcla/termshark][Termshark]] is a A terminal UI for tshark, inspired by Wireshark
+     [[https://www.linuxuprising.com/2019/04/analyze-network-traffic-with-termshark.html][About it]]. It seems the doccuments are a bit sparse. If there is
+     anythign that is unclear, it is probably something that can be
+     looked up in the wireshark docs.. like what scale a suration
+     number is in etc. these are just concepts taken directly from wireshark.
+     [[/images/screenshot.termshark.png]]
 *** Docker apps
 **** Prouctivity
 ***** Icescrum
@@ -1074,7 +1081,7 @@ There are several things I think are crucial after years of full time study (not
  Read target language news - this is critical for expanding vocabulary and learning colocations - knowing what verbs are used in particular contexts (e.g., do they say "I talked with X" or "I talked to X". Do they say country X shot, launched, or threw a rocket?)
 
 Bottom line - language learning is not just about the number of hours you put in. The quality and type of practice you do matters a lot. You aren't going to be fluent via Duolingo alone. You need to put in the time using structured practice with native speakers to really learn anything.
-** TODO 2020-02-18-links
+** DONE 2020-02-18-links
    :PROPERTIES:
    :EXPORT_FILE_NAME: 2020-02-18-links
    :END:
@@ -1166,7 +1173,7 @@ Bottom line - language learning is not just about the number of hours you put in
     any given application. In using these splines for drawing a
     number of fonts, I also found they brought an aesthetic quality to
     the work." 
-** TODO Discontinuities
+** DONE Discontinuities
    :PROPERTIES:
    :EXPORT_FILE_NAME: discontinuities
    :END:
@@ -1175,7 +1182,7 @@ Bottom line - language learning is not just about the number of hours you put in
     for instance, the rigged voting in russia can be seen by the round
     numbers of voter regidtered at polling stations.
     [[https://news.ycombinator.com/item?id=22378555][via HN]]
-** TODO Parsing-Text
+** DONE Parsing-Text
    :PROPERTIES:
    :EXPORT_FILE_NAME: parsing-text
    :END:
@@ -1187,7 +1194,7 @@ Bottom line - language learning is not just about the number of hours you put in
     parser that we have trained for you, and that you can use to
     analyze" text.
     - It seems to have dissapared from the tensorflow github page.
-** TODO Epidemiology
+** DONE Epidemiology
    :PROPERTIES:
    :EXPORT_FILE_NAME: epidemiology
    :END:
@@ -1282,6 +1289,20 @@ Bottom line - language learning is not just about the number of hours you put in
     - cat /dev/urandom
     - htop
     - tail -f /var/logs/syslog | lnav
+** DONE What was that better Thesaurus site?
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: what-was-that-better-word-site
+   :END:
+ 
+   [[https://onelook.com/][Onelook]] because it links to many many other databases. some of them
+   very cool like [[https://mnemonicdictionary.com/][MnemonicDictionary]] and it has a port mantaux
+   generator.
+** DONE merger between our Milky Way galaxy and the neighbouring Andromeda galaxy
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: merger-between-our-milky-way-galaxy-and-the-neighbouring-andromeda-galaxy
+   :END:
+   [[/images/galaxycrash.jpg]]
+   [[/images/starforming.jpg]]
 
 
 * Emacs                                                              :@emacs:
