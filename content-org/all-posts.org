@@ -1303,7 +1303,22 @@ Bottom line - language learning is not just about the number of hours you put in
    :END:
    [[/images/galaxycrash.jpg]]
    [[/images/starforming.jpg]]
-
+   :PROPERTIES:
+** DONE Pig sicknesses
+   :EXPORT_FILE_NAME: pig-sicknesses
+   :END:
+*** What is wrong with pigs at the moment?
+    - [[https://www.env.go.jp/nature/choju/infection/notice/guidance.pdf][Classical Swine Fever (CSF) and African Swine Fever(ASF)]]
+*** How is it spreading in Japan?
+    [[https://www.maff.go.jp/j/syouan/douei/csf/domestic.html][it is spreading out from around the middle]] and maybe passing
+    between wild pigs and farm pigs via smaller animals coming in and
+    out of pig farms.
+*** What did you learn from this?
+    about how the environmental persistence of this virus and its many
+    and varied routes of transmission make it spread by local
+    epidemics and then become endemic in populations.
+    it is 80%+ fatal to pigs
+      
 
 * Emacs                                                              :@emacs:
 All posts in here will have the category set to /emacs/.
@@ -1324,6 +1339,7 @@ All posts in here will have the category set to /emacs/.
 - The /lastmod/ property in the front-matter is set automatically to
   the time of export.
 **** A sub-heading under that heading
+
 - It's draft state will be marked as =true= as the subtree has a the
   todo state set to /TODO/.
 
