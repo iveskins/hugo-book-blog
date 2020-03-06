@@ -1,7 +1,7 @@
 +++
 title = "Terminal Tools"
 author = ["T", "Ivan"]
-lastmod = 2020-02-18T13:37:25+09:00
+lastmod = 2020-03-06T15:19:28+09:00
 weight = 2012
 draft = false
 +++
@@ -56,6 +56,16 @@ iterm, and other terminal apps to allow for preview of images.
 
 
 #### Aquamacs {#aquamacs}
+
+
+### Termshark {#termshark}
+
+[Termshark](https://github.com/gcla/termshark) is a A terminal UI for tshark, inspired by Wireshark
+[About it](https://www.linuxuprising.com/2019/04/analyze-network-traffic-with-termshark.html). It seems the doccuments are a bit sparse. If there is
+anythign that is unclear, it is probably something that can be
+looked up in the wireshark docs.. like what scale a suration
+number is in etc. these are just concepts taken directly from wireshark.
+{{<figure src="/images/screenshot.termshark.png">}}
 
 
 ## Docker apps {#docker-apps}

@@ -1,7 +1,7 @@
 +++
 title = "How can run forked processes in bash"
 author = ["T", "Ivan"]
-lastmod = 2020-02-18T13:37:32+09:00
+lastmod = 2020-03-06T15:19:37+09:00
 weight = 2031
 draft = false
 +++

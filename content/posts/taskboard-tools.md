@@ -1,7 +1,7 @@
 +++
 title = "What are some Taskboard tools for project management?"
 author = ["T", "Ivan"]
-lastmod = 2020-02-18T13:37:33+09:00
+lastmod = 2020-03-06T15:19:38+09:00
 weight = 2033
 draft = false
 +++

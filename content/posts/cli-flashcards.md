@@ -1,7 +1,7 @@
 +++
 title = "CLI flashcards"
 author = ["T", "Ivan"]
-lastmod = 2020-02-18T13:37:29+09:00
+lastmod = 2020-03-06T15:19:32+09:00
 weight = 2021
 draft = false
 +++

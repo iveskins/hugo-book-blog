@@ -1,7 +1,7 @@
 +++
 title = "Done Are good-faith communities possible on the internet anymore?"
 author = ["T", "Ivan"]
-lastmod = 2020-02-18T13:37:31+09:00
+lastmod = 2020-03-06T15:19:34+09:00
 weight = 2026
 draft = false
 +++

@@ -1,7 +1,7 @@
 +++
 title = "What was that old guy taling about emacs?"
 author = ["T", "Ivan"]
-lastmod = 2020-02-18T13:37:28+09:00
+lastmod = 2020-03-06T15:19:32+09:00
 weight = 2020
 draft = false
 +++

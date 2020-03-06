@@ -1,7 +1,7 @@
 +++
 title = "News and research sources 2019/12/05"
 author = ["T", "Ivan"]
-lastmod = 2020-02-18T13:37:26+09:00
+lastmod = 2020-03-06T15:19:29+09:00
 weight = 2014
 draft = false
 +++
