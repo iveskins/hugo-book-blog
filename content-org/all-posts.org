@@ -462,6 +462,19 @@ and efficient.
     - riot
   
 *** Fonts
+    -  [[https://NerdFonts.com][Nerd Fonts]] is a project that makes lots of differnt font icon
+    projects avaliable in one font. It also has a font patcher so you
+    can put icons into any font. Patched fonts can be installed by
+    homebew.
+    One font I found nice to use was [[https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/FantasqueSansMono#installation][Fantasque]]. it Is in the spirit of
+    comic sans. [[https://news.ycombinator.com/item?id=20533923][discussion of comic fonts]] 
+    - I use monaco for my orgmode font in aquamacs
+    - I use firacode for my iterm at the moment
+    - my atom font is Menlo, Consolas, DejaVu Sans Mono, monospace
+    - I also use Cascadia Code, and Caskaydia Cove Nerdfont on
+      iterm. for the ligatures
+
+
 
 *** Editors
 
@@ -469,7 +482,7 @@ and efficient.
 
 **** Atom
 
-**** sublime text
+**** Sublime text
 
 **** textmate
 
@@ -845,7 +858,7 @@ variable "start_schedule_expression" {
 } # start every weekday at 08:50JST+9
 
 
-** Done Are good-faith communities possible on the internet anymore?
+** DONE Done Are good-faith communities possible on the internet anymore?
    :PROPERTIES:
    :EXPORT_FILE_NAME: are-good-faith-communities-possible-on-the-internet-anymore
    :END:
@@ -881,7 +894,7 @@ variable "start_schedule_expression" {
 	- one side thinks this is a culture war
 	- the other side isnt aware there is a war going on
       - levels of radicalized resoorting to violence
-** Voices
+** DONE Voices
    :PROPERTIES:
    :EXPORT_FILE_NAME: radio-voice
    :END:
@@ -1318,7 +1331,129 @@ Bottom line - language learning is not just about the number of hours you put in
     and varied routes of transmission make it spread by local
     epidemics and then become endemic in populations.
     it is 80%+ fatal to pigs
-      
+** TODO Interesting HN Discussions.
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: interesting-dot-hn
+   :End:
+*** This analysis seems superficial and xenophobic   
+    https://news.ycombinator.com/item?id=22522247
+    - a good rebuff of the common way we talk about people in the
+      middle east.
+*** Websites have evolved back to static HTML/CSS/JS files  
+    - https://news.ycombinator.com/item?id=22519090
+    - Talking about the rise of serverless webpages and static site
+      generators. 
+*** How to schedule meeting and be nice about it
+    https://news.ycombinator.com/item?id=22483847
+** TODO Development
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: development
+   :END:
+*** Frameworks
+**** APP
+***** Remake
+      https://remaketheweb.com/
+      This is an app framework that aims to make app development as
+      easy as writing HTML. This could e good for learners, or things
+      to make quickly and simply. Use with kids?
+** TODO Stuff I want to read 
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: stuff-i-want-to-read
+   :END:
+*** [[https://superorganizers.substack.com/p/how-to-build-a-learning-machine][how-to-build-a-learning-machine]]
+*** [[https://scholar.harvard.edu/files/danielgilbert/files/if-money-doesnt-make-you-happy.nov-12-20101.pdf][if-money-doesnt-make-you-happy.nov-12-20101]]
+
+** TODO phrases
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: phrases
+   :END:
+ Phrases to re-read
+*** [[https://news.ycombinator.com/item?id=20682564][Economic anxiety, a policy pushed by financial planners, is what motivates. Not money.]]
+      - You could decide money and the rat race are pointless and
+        decide to just stop pursuing it. And you'll survive... for a
+        time. Then you won't be able to function in society. Won't be
+        able to eat, or have a place to live, effectively the
+        equivalent of having your skull bashed in like in that
+        previous world.
+      - there's a certain amount of hubris in assuming that you know
+        better than the norms. Often, norms became norms because they
+        work for a lot of people.
+      - Don't buy into the myths of scarcity and learned helplessness
+        society uses to get people to play along. Everyone's capable
+        of learning how to reconnect with and be an active contributor
+        to nature. We
+ 
+*** Hyper-sane 
+    It is not just that the ‘sane’ are irrational but that they lack
+    scope and range, as though they’ve grown into the prisoners of
+    their arbitrary lives, locked up in their own dark and narrow
+    subjectivity. Unable to take leave of their selves, they hardly
+    look around them, barely see beauty and possibility, rarely
+    contemplate the bigger picture
+    - NOTE: I'm not sure this is a thing
+
+*** "He that would make his own liberty secure, must guard even his enemy from oppression; for if he violates this duty, he establishes a precedent that will reach to himself."
+     - https://news.ycombinator.com/item?id=22540337
+*** long-range amorphous order
+    “long-range amorphous order,” where each molecule feels and
+    affects the position of every other, so that in order to move,
+    they must move as one. The hidden long-range order of this
+    putative state could rival the more obvious orderliness of a
+    crystal. “That observation right there was at the heart of why
+    people thought there should be an ideal glass," 
+    - perfect glass
+*** How an open-loop scrubber works 
+    - https://www.theguardian.com/environment/2018/oct/29/thousands-of-ships-could-dump-pollutants-at-sea-to-avoid-dirty-fuel-ban
+    - Exhaust gas is sprayed with seawater to wash out sulphur oxide
+    - Washwater is treated and monitored
+    - Treated washwater is discharged into the sea
+
+*** ontogeny
+    I’ve come to love this term ontogeny because it brings together,
+    in one helpful word, the flux of becoming that scientists as well
+    as existentialists seek to understand. By rallying readers with
+    their slogan ‘existence precedes essence’, Beauvoir and Sartre
+    were drawing attention to the utterly singular way in which we
+    each become the selves that we are, with our own memories, stories
+    and storytelling habits.
+
+**** What point dod we become human?
+     if evolution is a continious process.. then there is no one event
+     that changes from one species to the next.. we cant draw a linet:W
+     when humanity begun..
+     maybe it hasn't even started yet.. we havn't become human
+     yet.. we are skill walking apes.
+
+
+
+
+** DONE What was that math visuals software?
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: what-was-that-math-visuals-software
+   :END:
+   - https://www.geogebra.org/?lang=en
+** DONE Links 2020-03-18
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: links-2020-03-18
+   :END:
+https://developers.google.com/assistant/tools/sound-library | Sound Library  |  Conversational Actions  |  Google Developers
+https://developer.amazon.com/en-US/docs/alexa/custom-skills/speechcon-reference-interjections-english-australia.html | Speechcon Reference (Interjections): English (AU) | Alexa Skills Kit
+https://aeon.co/ideas/hypocognition-is-a-censorship-tool-that-mutes-what-we-can-feel?utm_medium=feed&utm_source=atom-feed | Hypocognition is a censorship tool that mutes what we can feel | Aeon Ideas
+https://news.ycombinator.com/item?id=20676959 | The hypersane are among us, if only we are prepared to look | Hacker News
+https://aeon.co/ideas/the-hypersane-are-among-us-if-only-we-are-prepared-to-look | The hypersane are among us, if only we are prepared to look | Aeon Ideas
+https://www.nickkolenda.com/psychological-pricing-strategies/#pricing-t1 | Psychological Pricing: An Enormous List of Tactics
+https://feedly.com/i/entry/IZR+JDs9ZnUqD6xpCfaGbmkqTZtq3kpqwIx1GMAFNLo=_170eb1798ad:25bc8c8:79e8e7ea | All Personal Feeds
+http://docs.bigbluebutton.org/ | BigBlueButton : BigBlueButton
+https://www.cambridge.org/core/what-we-publish/textbooks | Textbooks | What We Publish | Cambridge Core
+https://www.cambridge.org/core/books/key-questions-in-language-teaching/how-do-we-carry-out-second-language-research/D5DC57AD2B3C1319AB9B460E9D29C894/online-view | How Do We Carry Out Second Language Research? (Chapter 6) - Key Questions in Language Teaching
+** DONE How do I grep in a minified file?
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: how-do-i-grep-in-a-minified-file
+   :END:
+   when a file has all its text on one big long line, grep is not very
+   useful. how can i just get the part of a line I want?
+*** Use regex to match character before and after, and -o to only show match.
+    grep -o "\{0,15\}search_string\{0,20\}" file
 
 * Emacs                                                              :@emacs:
 All posts in here will have the category set to /emacs/.

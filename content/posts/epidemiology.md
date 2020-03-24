@@ -1,7 +1,7 @@
 +++
 title = "Epidemiology"
 author = ["T", "Ivan"]
-lastmod = 2020-03-06T15:19:43+09:00
+lastmod = 2020-03-24T18:20:28+09:00
 weight = 2043
 draft = false
 +++

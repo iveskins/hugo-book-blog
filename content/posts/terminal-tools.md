@@ -1,7 +1,7 @@
 +++
 title = "Terminal Tools"
 author = ["T", "Ivan"]
-lastmod = 2020-03-06T15:19:28+09:00
+lastmod = 2020-03-24T18:20:12+09:00
 weight = 2012
 draft = false
 +++
@@ -116,6 +116,20 @@ number is in etc. these are just concepts taken directly from wireshark.
 
 ## Fonts {#fonts}
 
+-   [Nerd Fonts](https://NerdFonts.com) is a project that makes lots of differnt font icon
+
+projects avaliable in one font. It also has a font patcher so you
+can put icons into any font. Patched fonts can be installed by
+homebew.
+One font I found nice to use was [Fantasque](https://github.com/ryanoasis/nerd-fonts/tree/master/patched-fonts/FantasqueSansMono#installation). it Is in the spirit of
+comic sans. [discussion of comic fonts](https://news.ycombinator.com/item?id=20533923)
+
+-   I use monaco for my orgmode font in aquamacs
+-   I use firacode for my iterm at the moment
+-   my atom font is Menlo, Consolas, DejaVu Sans Mono, monospace
+-   I also use Cascadia Code, and Caskaydia Cove Nerdfont on
+    iterm. for the ligatures
+
 
 ## Editors {#editors}
 
@@ -126,7 +140,7 @@ number is in etc. these are just concepts taken directly from wireshark.
 ### Atom {#atom}
 
 
-### sublime text {#sublime-text}
+### Sublime text {#sublime-text}
 
 
 ### textmate {#textmate}

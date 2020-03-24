@@ -1,7 +1,7 @@
 +++
 title = "What is a language for creating interactive stories?"
 author = ["T", "Ivan"]
-lastmod = 2020-03-06T15:19:28+09:00
+lastmod = 2020-03-24T18:20:12+09:00
 weight = 2013
 draft = false
 +++
