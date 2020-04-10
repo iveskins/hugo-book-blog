@@ -1,7 +1,7 @@
 +++
 title = "phrases"
 author = ["T", "Ivan"]
-lastmod = 2020-03-24T18:20:31+09:00
+lastmod = 2020-04-10T17:47:11+09:00
 weight = 2050
 draft = true
 +++
@@ -81,3 +81,32 @@ that changes from one species to the next.. we cant draw a linet:W
 when humanity begun..
 maybe it hasn't even started yet.. we havn't become human
 yet.. we are skill walking apes.
+
+
+## Forced filter {#forced-filter}
+
+<https://news.ycombinator.com/item?id=22744311>
+
+-   Agreed. It's not the feed that broke the internet – it's the forced filter.
+
+The notion that forced filtration, reprioritization, and chronological
+rearrangement of content is implicit the idea of information feeds
+(search, social media, etc) shows how deep the brokenness is
+    baked in.
+
+-   I've always imagined animals on a farm feeding happily at a trough, unaware of their impending doom.
+
+
+## It's hard to make good choices when you're only surrounded by bad one. {#it-s-hard-to-make-good-choices-when-you-re-only-surrounded-by-bad-one-dot}
+
+<https://news.ycombinator.com/item?id=22744409>
+You're spot on. But really... all people are basically the
+same. And like Google, they're incentivized by the system to be
+horrible to each other and/or horrible to the environment. I think
+people all have a choice. But I think the good choices are really
+hard to make when you're only surrounded by bad choices.
+
+-   This sentiment reflects some of what I have been confronted with
+    moving out of one society and culture into another. How our
+    environment is a big limit on our choices and even perceptions
+    of whats choosable.

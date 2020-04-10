@@ -1362,6 +1362,9 @@ Bottom line - language learning is not just about the number of hours you put in
    :END:
 *** [[https://superorganizers.substack.com/p/how-to-build-a-learning-machine][how-to-build-a-learning-machine]]
 *** [[https://scholar.harvard.edu/files/danielgilbert/files/if-money-doesnt-make-you-happy.nov-12-20101.pdf][if-money-doesnt-make-you-happy.nov-12-20101]]
+*** The feeds discussed in this post
+    https://news.ycombinator.com/item?id=22744171
+    
 
 ** TODO phrases
    :PROPERTIES:
@@ -1426,6 +1429,27 @@ Bottom line - language learning is not just about the number of hours you put in
 
 
 
+*** Forced filter
+    https://news.ycombinator.com/item?id=22744311
+    	- Agreed. It's not the feed that broke the internet – it's the forced filter.
+	The notion that forced filtration, reprioritization, and chronological
+	rearrangement of content is implicit the idea of information feeds
+	(search, social media, etc) shows how deep the brokenness is
+    	baked in.
+	- I've always imagined animals on a farm feeding happily at a trough, unaware of their impending doom. 
+*** It's hard to make good choices when you're only surrounded by bad one.
+    https://news.ycombinator.com/item?id=22744409
+    You're spot on. But really... all people are basically the
+    same. And like Google, they're incentivized by the system to be
+    horrible to each other and/or horrible to the environment. I think
+    people all have a choice. But I think the good choices are really
+    hard to make when you're only surrounded by bad choices.
+
+    - This sentiment reflects some of what I have been confronted with
+      moving out of one society and culture into another. How our
+      environment is a big limit on our choices and even perceptions
+      of whats choosable. 
+
 
 ** DONE What was that math visuals software?
    :PROPERTIES:
@@ -1445,7 +1469,9 @@ https://www.nickkolenda.com/psychological-pricing-strategies/#pricing-t1 | Psych
 https://feedly.com/i/entry/IZR+JDs9ZnUqD6xpCfaGbmkqTZtq3kpqwIx1GMAFNLo=_170eb1798ad:25bc8c8:79e8e7ea | All Personal Feeds
 http://docs.bigbluebutton.org/ | BigBlueButton : BigBlueButton
 https://www.cambridge.org/core/what-we-publish/textbooks | Textbooks | What We Publish | Cambridge Core
-https://www.cambridge.org/core/books/key-questions-in-language-teaching/how-do-we-carry-out-second-language-research/D5DC57AD2B3C1319AB9B460E9D29C894/online-view | How Do We Carry Out Second Language Research? (Chapter 6) - Key Questions in Language Teaching
+https://www.cambridge.org/core/books/key-questions-in-language-teaching/how-do-we-carry-out-second-language-research/D5DC57AD2B3C1319AB9B460E9D29C894/online-view |
+How Do We Carry Out Second Language Research? (Chapter 6) - Key
+Questions in Language Teaching
 ** DONE How do I grep in a minified file?
    :PROPERTIES:
    :EXPORT_FILE_NAME: how-do-i-grep-in-a-minified-file
@@ -1454,7 +1480,55 @@ https://www.cambridge.org/core/books/key-questions-in-language-teaching/how-do-w
    useful. how can i just get the part of a line I want?
 *** Use regex to match character before and after, and -o to only show match.
     grep -o "\{0,15\}search_string\{0,20\}" file
+** TODO Android weather apps
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: android-weather-apps
+   :END:
+   I was reading about apple buying a weather server and turning off
+   it's api and stopping it's android apps. in that discussion there
+   was a few suggested alternatives.
 
+   - [[https://play.google.com/store/apps/details?id=com.enzuredigital.weatherbomb&hl=en_US][Flowx: Weather Map Forecast]]
+   - [[https://play.google.com/store/apps/details?id=org.androworks.klara][Klara weather]]
+   - [[https://play.google.com/store/apps/details?id=no.nrk.yr&hl=en][YR]]
+   - [[https://play.google.com/store/apps/details?id=com.helloweatherapp&ah=RtPyJfHEtl2bzH0QB-kPw2m2RIs][Hello Weather]]
+** TODO How do I make gnu screen look better?
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: how-do-i-make-gnu-screen-look-better
+   :END:
+*** How do I remove the white dividers between splits? 
+    - Q: I want to center my vim in the middle of the screen and have a
+      big black border on each side(to look like iA writer). I think I
+      can do this with gnu/screen. just make two vertical splits and
+      have thin panes on either side of the vim pane. But the split
+      divider is a bid white bar, hardly no distractions.
+    - A: ctrl-a :rendition so "="
+      or :rendition so =00(or 01)
+      will remove the while block split divider.
+    - ctrl-a :caption string "%{03}"
+      might remove the horizontal split (never tried)
+** TODO Frameworks and things
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: frameworks-and-things
+   :END:
+*** design
+    - [[https://tailwindcss.com/][Tailwind]] A utility-first CSS framework for rapidly building
+      custom designs.
+** TODO Networking and remote
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: networking-and-remote
+   :END:
+*** ZeroTrust networking
+    - [[https://tailscale.com][tail scale]] . it's like a lan over the internet
+** TODO Making vim look better
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: making-vim-look-better
+   :END:
+*** How Do I make vim buffer centered in the middle of the page, and have nerdtree list toggle over the margin empty space?
+    - Goyo
+      https://jennifermack.net/2017/02/01/recreating-ulysses-with-vim/
+*** How Do I show indentation with VIM?
+    - Plugin 'nathanaelkane/vim-indent-guides'
 * Emacs                                                              :@emacs:
 All posts in here will have the category set to /emacs/.
 ** TODO Writing Hugo blog in org                                   :hugo:org:

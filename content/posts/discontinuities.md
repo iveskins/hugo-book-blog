@@ -1,7 +1,7 @@
 +++
 title = "Discontinuities"
 author = ["T", "Ivan"]
-lastmod = 2020-03-24T18:20:27+09:00
+lastmod = 2020-04-10T17:47:06+09:00
 weight = 2041
 draft = false
 +++
