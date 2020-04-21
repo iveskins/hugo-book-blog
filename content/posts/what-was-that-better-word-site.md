@@ -1,7 +1,7 @@
 +++
 title = "What was that better Thesaurus site?"
 author = ["T", "Ivan"]
-lastmod = 2020-04-10T17:47:08+09:00
+lastmod = 2020-04-21T13:56:51+09:00
 weight = 2045
 draft = false
 +++

@@ -1,9 +1,9 @@
 +++
 title = "How do I make gnu screen look better?"
 author = ["T", "Ivan"]
-lastmod = 2020-04-10T17:47:13+09:00
+lastmod = 2020-04-21T13:56:55+09:00
 weight = 2055
-draft = true
+draft = false
 +++
 
 ## How do I remove the white dividers between splits? {#how-do-i-remove-the-white-dividers-between-splits}

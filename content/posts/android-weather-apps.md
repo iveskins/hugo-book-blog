@@ -1,9 +1,9 @@
 +++
 title = "Android weather apps"
 author = ["T", "Ivan"]
-lastmod = 2020-04-10T17:47:13+09:00
+lastmod = 2020-04-21T13:56:55+09:00
 weight = 2054
-draft = true
+draft = false
 +++
 
 I was reading about apple buying a weather server and turning off

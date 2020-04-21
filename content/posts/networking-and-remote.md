@@ -1,9 +1,9 @@
 +++
 title = "Networking and remote"
 author = ["T", "Ivan"]
-lastmod = 2020-04-10T17:47:14+09:00
+lastmod = 2020-04-21T13:56:56+09:00
 weight = 2057
-draft = true
+draft = false
 +++
 
 ## ZeroTrust networking {#zerotrust-networking}

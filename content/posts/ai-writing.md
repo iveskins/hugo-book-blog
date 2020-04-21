@@ -1,7 +1,7 @@
 +++
 title = "Ai writing"
 author = ["T", "Ivan"]
-lastmod = 2020-04-10T17:46:55+09:00
+lastmod = 2020-04-21T13:56:38+09:00
 weight = 2018
 draft = false
 +++

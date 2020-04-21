@@ -1,9 +1,9 @@
 +++
 title = "Frameworks and things"
 author = ["T", "Ivan"]
-lastmod = 2020-04-10T17:47:13+09:00
+lastmod = 2020-04-21T13:56:56+09:00
 weight = 2056
-draft = true
+draft = false
 +++
 
 ## design {#design}

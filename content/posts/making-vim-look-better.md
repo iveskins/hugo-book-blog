@@ -1,9 +1,9 @@
 +++
 title = "Making vim look better"
 author = ["T", "Ivan"]
-lastmod = 2020-04-10T17:47:14+09:00
+lastmod = 2020-04-21T13:56:56+09:00
 weight = 2058
-draft = true
+draft = false
 +++
 
 ## How Do I make vim buffer centered in the middle of the page, and have nerdtree list toggle over the margin empty space? {#how-do-i-make-vim-buffer-centered-in-the-middle-of-the-page-and-have-nerdtree-list-toggle-over-the-margin-empty-space}

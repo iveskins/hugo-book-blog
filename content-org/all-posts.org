@@ -8,7 +8,6 @@
 
 # do =C-c C-e H H= to export just this post.
 
-
 * Ideas
 ** DONE About this site
    :PROPERTIES:
@@ -1480,7 +1479,7 @@ Questions in Language Teaching
    useful. how can i just get the part of a line I want?
 *** Use regex to match character before and after, and -o to only show match.
     grep -o "\{0,15\}search_string\{0,20\}" file
-** TODO Android weather apps
+** DONE Android weather apps
    :PROPERTIES:
    :EXPORT_FILE_NAME: android-weather-apps
    :END:
@@ -1492,7 +1491,7 @@ Questions in Language Teaching
    - [[https://play.google.com/store/apps/details?id=org.androworks.klara][Klara weather]]
    - [[https://play.google.com/store/apps/details?id=no.nrk.yr&hl=en][YR]]
    - [[https://play.google.com/store/apps/details?id=com.helloweatherapp&ah=RtPyJfHEtl2bzH0QB-kPw2m2RIs][Hello Weather]]
-** TODO How do I make gnu screen look better?
+** DONE How do I make gnu screen look better?
    :PROPERTIES:
    :EXPORT_FILE_NAME: how-do-i-make-gnu-screen-look-better
    :END:
@@ -1507,20 +1506,20 @@ Questions in Language Teaching
       will remove the while block split divider.
     - ctrl-a :caption string "%{03}"
       might remove the horizontal split (never tried)
-** TODO Frameworks and things
+** DONE Frameworks and things
    :PROPERTIES:
    :EXPORT_FILE_NAME: frameworks-and-things
    :END:
 *** design
     - [[https://tailwindcss.com/][Tailwind]] A utility-first CSS framework for rapidly building
       custom designs.
-** TODO Networking and remote
+** DONE Networking and remote
    :PROPERTIES:
    :EXPORT_FILE_NAME: networking-and-remote
    :END:
 *** ZeroTrust networking
     - [[https://tailscale.com][tail scale]] . it's like a lan over the internet
-** TODO Making vim look better
+** DONE Making vim look better
    :PROPERTIES:
    :EXPORT_FILE_NAME: making-vim-look-better
    :END:
@@ -1529,6 +1528,131 @@ Questions in Language Teaching
       https://jennifermack.net/2017/02/01/recreating-ulysses-with-vim/
 *** How Do I show indentation with VIM?
     - Plugin 'nathanaelkane/vim-indent-guides'
+** DONE What is a tool for using Brackets editor for academic writing?
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: what-is-a-tool-for-using-brackets-editor-for-academic-writing
+   :END:
+*** [[https://baig.github.io/brackets-zotero/][Brackets Zotero]]
+** DONE How do i make Gnu/Screen multi-user
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: how-do-i-make-gnu-screen-multi-user
+   :END:
+*** [[https://www.mfitzp.com/article/collaborate-in-the-shell-with-screen-multiuser/][Follow instructions here]]
+    - sudo chmod +s /usr/bin/screen  # Make screen suid root
+    - sudo chmod 755 /var/run/screen # Make the screen dir more open
+      "Note that if you want to share a screen between two sessions of
+      the same user on a system you can skip this step entirely. This
+      is useful for example if you have a shared login on a system."
+    - screen -d -m -S multi
+
+    - :multiuser on
+    - :acladd <username>
+
+      -You can save yourself some time by putting these commands in
+      the .screenrc configuration file.
+** DONE What was that site that Trimed articles to load better?
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: trim-articles
+   :END:
+***  https://beta.trimread.com/
+    - I wonder if there is one that works for japanese news sites that
+      spread things over multiple pages.
+** TODO How can I alarm if my gitlab backups arn't running?
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: how-can-i-alarm-if-my-gitlab-backups-arn-t-running
+   :END:
+   I just had an incident where the crontab on my gitlab host had been
+   removed for about a month. Because of this the backups to s3 had
+   not been running, and the existing backups were all deleted by the
+   s3 bucket policy to delete after 14 days. This reveals two problems
+   with my system. I have a dashboard set up to monitor the bakups,
+   but no-one looks at it.
+   - it is possible to be left with no backups
+   - there was no alarming that the backups were not running.
+
+
+
+*** How can I alarm if the backup didn't run.
+    Seeming as the AWS tools eem to be the most fail safe(unlikely to
+    have configuration drift), one way
+    could be to alarm on the items in the s3
+    bucket. assuming that nothing else but backups should be in this
+    bucket. I would would idealy want to check each day if a new
+    backup file has appared, and if not send an alert message. 
+    - [[https://stackoverflow.com/questions/59063713/how-to-setup-cloud-watch-alarm-for-s3-bucket-if-no-data-is-received-in-bucket-fo][This]] stackoverflow answer talks about "Create an Amazon
+      CloudWatch Events rule to trigger an AWS Lambda function" That
+      seems to be a bit complicatione 
+    - Maybe I can just make the bucket publish to an SNS topic on any
+      create event. Then any time a backup runs a notification will
+      be published to that topic. We don't care to know if the back up runs
+      successfully, that would be information overload. So we can use
+      Cloudwatch metrics to set up an alarm to monitor the numbers of
+      messages published to that topic per day. If there isn't a
+      message published, then we can assume the bakcup hasn't run and
+      we need to investigate. 
+**** How can i make this with terraform?
+     What are the components?
+     - SNS topic to recieve s3 file events
+     - [[https://www.terraform.io/docs/providers/aws/r/s3_bucket_notification.html][S3 Events configuration]]
+       
+     - Cloudwatch metic
+       + maybe this is can be created together with the alarm.(maybe
+         it doesnt need to be created because we are not using a
+         custome metric, and it already exists, and we can just query
+         it in the alarm config)
+     - [[https://www.terraform.io/docs/providers/aws/r/cloudwatch_metric_alarm.html][Cloud watch alarm]]
+       following
+       [[https://webcache.googleusercontent.com/search?q=cache:pweBgqTEfqQJ:https://underthehood.meltwater.com/blog/2019/01/31/monitoring-your-system-heartbeat-using-cloudwatch/+&cd=1&hl=ja&ct=clnk&gl=jp&client=firefox-b-d][This]] example.
+       - We will set the "period" to "one day(in seconds 86400)" (the frequency of backups)
+       - set "treat_missing_data" to "breeching"
+         - so if no data (message) is recieved in a day it will invoke the configured "alarm_action"
+       - 
+     - SNS topic to recieve alarms(use existing)
+***** That was annoying.
+      There are some big gotcha with policy permissions to get this
+      working via terraform.. In the end I have just set it up by hand
+      for the time being because I have other things to get done.
+
+
+      The alarm:
+
+
+Threshold
+NumberOfMessagesPublished < 1 for 1 datapoints within 1 day
+Last change
+2020-04-20 07:17:25
+ARN
+arn:aws:cloudwatch:::alarm:gitlab_backups_missing
+      
+amespace
+AWS/SNS
+Metric name
+NumberOfMessagesPublished
+TopicName
+ops-gitlab-backup-metrics-monitor
+Statistic
+Maximum
+Period
+1 day
+
+Datapoints to alarm
+1 out of 1
+Missing data treatment
+Treat missing data as bad (breaching threshold)
+Percentiles with low samples
+evaluate
+
+
+    The bucket notification config:
+    ✓　All object create events
+    　　send to SNS topic:
+    ops-gitlab-backup-metrics-monitor
+
+
+
+And lots of policies to allow that to happen.
+
+
 * Emacs                                                              :@emacs:
 All posts in here will have the category set to /emacs/.
 ** TODO Writing Hugo blog in org                                   :hugo:org:
