@@ -1,7 +1,7 @@
 +++
 title = "Neural Net generated Music?"
 author = ["T", "Ivan"]
-lastmod = 2020-04-21T13:56:46+09:00
+lastmod = 2020-04-24T17:45:21+09:00
 weight = 2035
 draft = false
 +++

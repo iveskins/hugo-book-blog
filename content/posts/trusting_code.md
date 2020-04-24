@@ -1,7 +1,7 @@
 +++
 title = "How can I trust any code?"
 author = ["T", "Ivan"]
-lastmod = 2020-04-21T13:56:41+09:00
+lastmod = 2020-04-24T17:45:15+09:00
 weight = 2024
 draft = false
 +++

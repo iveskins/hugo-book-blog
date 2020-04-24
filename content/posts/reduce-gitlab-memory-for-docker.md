@@ -1,7 +1,7 @@
 +++
 title = "reduce gitlab memory for docker"
 author = ["T", "Ivan"]
-lastmod = 2020-04-21T13:56:38+09:00
+lastmod = 2020-04-24T17:45:12+09:00
 weight = 2017
 draft = false
 +++

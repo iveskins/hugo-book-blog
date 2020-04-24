@@ -1,7 +1,7 @@
 +++
 title = "What was that site that Trimed articles to load better?"
 author = ["T", "Ivan"]
-lastmod = 2020-04-21T13:56:57+09:00
+lastmod = 2020-04-24T17:45:34+09:00
 weight = 2061
 draft = false
 +++

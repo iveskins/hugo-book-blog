@@ -1651,8 +1651,17 @@ evaluate
 
 
 And lots of policies to allow that to happen.
-
-
+** TODO Sources of audio for machine learning
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: sources-of-audio-for-machine-learning
+   :END:
+ are discussed [[http://www.mirkoperri.com/a-i-and-sound-design/][here]] 
+and [[http://www.cs.tut.fi/~heittolt/datasets#environmental-audio][here]]
+** TODO What was that podcast editing application that had the api to generate your own voice from text?
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: what-was-that-podcast-editing-application-that-had-the-api-to-generate-your-own-voice-from-text
+   :END:
+ https://www.descript.com/
 * Emacs                                                              :@emacs:
 All posts in here will have the category set to /emacs/.
 ** TODO Writing Hugo blog in org                                   :hugo:org:

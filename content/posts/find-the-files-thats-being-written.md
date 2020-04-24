@@ -1,7 +1,7 @@
 +++
 title = "find the files thats being written"
 author = ["T", "Ivan"]
-lastmod = 2020-04-21T13:56:39+09:00
+lastmod = 2020-04-24T17:45:13+09:00
 weight = 2019
 draft = false
 +++

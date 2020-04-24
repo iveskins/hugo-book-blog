@@ -1,7 +1,7 @@
 +++
 title = "Making vim look better"
 author = ["T", "Ivan"]
-lastmod = 2020-04-21T13:56:56+09:00
+lastmod = 2020-04-24T17:45:33+09:00
 weight = 2058
 draft = false
 +++

@@ -1,9 +1,9 @@
 +++
 title = "How can I alarm if my gitlab backups arn't running?"
 author = ["T", "Ivan"]
-lastmod = 2020-04-21T13:56:58+09:00
+lastmod = 2020-04-24T17:45:35+09:00
 weight = 2062
-draft = true
+draft = false
 +++
 
 I just had an incident where the crontab on my gitlab host had been
