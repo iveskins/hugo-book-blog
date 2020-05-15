@@ -1670,7 +1670,7 @@ and [[http://www.cs.tut.fi/~heittolt/datasets#environmental-audio][here]]
  
   [[https://layerci.com/][layer ci]]
   [[https://news.ycombinator.com/item?id=23035094][discussion]]
-** TODO Removing adds from podcasts
+** DONE Removing adds from podcasts
    :PROPERTIES:
    :EXPORT_FILE_NAME: removing-adds-from-podcasts
    :END:
@@ -1698,6 +1698,13 @@ and [[http://www.cs.tut.fi/~heittolt/datasets#environmental-audio][here]]
       maybe .. ASR it to text, and add the text to the feed
       description. It is not so invasive to see the text.. then I can
       also regex out square space and blue apron and things.
+*** Notes
+    - 
+       https://www.adblockradio.com/blog/2018/11/15/designing-audio-ad-block-radio-podcast/
+    - https://blog.rekawek.eu/2016/02/24/radio-adblock/
+    -
+      https://stackoverflow.com/questions/45526996/split-audio-files-using-silence-detection/46001755
+
 
 
 * Emacs                                                              :@emacs:
