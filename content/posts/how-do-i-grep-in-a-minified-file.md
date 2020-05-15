@@ -1,7 +1,7 @@
 +++
 title = "How do I grep in a minified file?"
 author = ["T", "Ivan"]
-lastmod = 2020-05-15T13:19:07+09:00
+lastmod = 2020-05-15T16:13:41+09:00
 weight = 2053
 draft = false
 +++

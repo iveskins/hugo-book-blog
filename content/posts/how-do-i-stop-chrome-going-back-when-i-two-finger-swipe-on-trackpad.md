@@ -1,7 +1,7 @@
 +++
 title = "How do I stop chrome going back when i two finger swipe on trackpad?"
 author = ["T", "Ivan"]
-lastmod = 2020-05-15T13:18:56+09:00
+lastmod = 2020-05-15T16:13:31+09:00
 weight = 2028
 draft = false
 +++

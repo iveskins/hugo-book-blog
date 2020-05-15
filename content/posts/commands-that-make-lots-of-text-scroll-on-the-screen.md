@@ -1,7 +1,7 @@
 +++
 title = "Commands that make lots of text scroll on the screen"
 author = ["T", "Ivan"]
-lastmod = 2020-05-15T13:19:03+09:00
+lastmod = 2020-05-15T16:13:38+09:00
 weight = 2044
 draft = true
 +++

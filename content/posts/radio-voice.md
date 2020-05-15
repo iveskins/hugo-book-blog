@@ -1,7 +1,7 @@
 +++
 title = "Voices"
 author = ["T", "Ivan"]
-lastmod = 2020-05-15T13:18:56+09:00
+lastmod = 2020-05-15T16:13:31+09:00
 weight = 2027
 draft = false
 +++

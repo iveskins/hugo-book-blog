@@ -1,7 +1,7 @@
 +++
 title = "Terminal Tools"
 author = ["T", "Ivan"]
-lastmod = 2020-05-15T13:18:50+09:00
+lastmod = 2020-05-15T16:13:25+09:00
 weight = 2012
 draft = false
 +++
@@ -50,6 +50,8 @@ iterm, and other terminal apps to allow for preview of images.
 
 
 #### Config {#config}
+
+{{<figure src="/images/screenshot.nvim.png">}}
 
 
 ### Emacs {#emacs}

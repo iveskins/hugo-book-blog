@@ -431,6 +431,7 @@ and efficient.
 ****** Nerdtree
 ***** Keybindings
 ***** Config
+     [[/images/screenshot.nvim.png]]
 **** Emacs
 ***** Aquamacs
 **** Termshark

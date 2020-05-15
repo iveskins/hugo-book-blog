@@ -1,7 +1,7 @@
 +++
 title = "How can I alarm if my gitlab backups arn't running?"
 author = ["T", "Ivan"]
-lastmod = 2020-05-15T13:19:11+09:00
+lastmod = 2020-05-15T16:13:45+09:00
 weight = 2062
 draft = false
 +++
