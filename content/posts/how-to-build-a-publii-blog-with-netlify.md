@@ -1,7 +1,7 @@
 +++
 title = "How to build a Publii blog with Netlify"
 author = ["T", "Ivan"]
-lastmod = 2020-04-24T17:45:07+09:00
+lastmod = 2020-05-15T13:18:49+09:00
 weight = 2009
 draft = false
 +++

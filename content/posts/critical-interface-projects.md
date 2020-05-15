@@ -1,7 +1,7 @@
 +++
 title = "critical Interface projects"
 author = ["T", "Ivan"]
-lastmod = 2020-04-24T17:45:11+09:00
+lastmod = 2020-05-15T13:18:51+09:00
 weight = 2016
 draft = false
 +++

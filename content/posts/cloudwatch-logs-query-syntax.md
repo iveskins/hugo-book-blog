@@ -1,7 +1,7 @@
 +++
 title = "Where is the cloudwatch logs query syntax actually doccumented?"
 author = ["T", "Ivan"]
-lastmod = 2020-04-24T17:45:18+09:00
+lastmod = 2020-05-15T13:18:57+09:00
 weight = 2029
 draft = false
 +++

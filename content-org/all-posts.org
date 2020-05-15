@@ -1557,7 +1557,7 @@ Questions in Language Teaching
 ***  https://beta.trimread.com/
     - I wonder if there is one that works for japanese news sites that
       spread things over multiple pages.
-** TODO How can I alarm if my gitlab backups arn't running?
+** DONE How can I alarm if my gitlab backups arn't running?
    :PROPERTIES:
    :EXPORT_FILE_NAME: how-can-i-alarm-if-my-gitlab-backups-arn-t-running
    :END:
@@ -1651,17 +1651,25 @@ evaluate
 
 
 And lots of policies to allow that to happen.
-** TODO Sources of audio for machine learning
+** DONE Sources of audio for machine learning
    :PROPERTIES:
    :EXPORT_FILE_NAME: sources-of-audio-for-machine-learning
    :END:
  are discussed [[http://www.mirkoperri.com/a-i-and-sound-design/][here]] 
 and [[http://www.cs.tut.fi/~heittolt/datasets#environmental-audio][here]]
-** TODO What was that podcast editing application that had the api to generate your own voice from text?
+** DONE What was that podcast editing application that had the api to generate your own voice from text?
    :PROPERTIES:
    :EXPORT_FILE_NAME: what-was-that-podcast-editing-application-that-had-the-api-to-generate-your-own-voice-from-text
    :END:
  https://www.descript.com/
+** TODO What was the start up that was offerin staging environment CI hosts?
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: what-was-the-start-up-that-was-offerin-staging-environment-ci-hosts
+   :END:
+ 
+  [[https://layerci.com/][layer ci]]
+  [[https://news.ycombinator.com/item?id=23035094][discussion]]
+
 * Emacs                                                              :@emacs:
 All posts in here will have the category set to /emacs/.
 ** TODO Writing Hugo blog in org                                   :hugo:org:
