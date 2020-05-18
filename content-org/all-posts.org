@@ -1700,10 +1700,55 @@ and [[http://www.cs.tut.fi/~heittolt/datasets#environmental-audio][here]]
       also regex out square space and blue apron and things.
 *** Notes
     - 
-       https://www.adblockradio.com/blog/2018/11/15/designing-audio-ad-block-radio-podcast/
+       [[https://www.adblockradio.com/blog/2018/11/15/designing-audio-ad-block-radio-podcast/][Adblock Radio]]
     - https://blog.rekawek.eu/2016/02/24/radio-adblock/
-    -
-      https://stackoverflow.com/questions/45526996/split-audio-files-using-silence-detection/46001755
+    - https://stackoverflow.com/questions/45526996/split-audio-files-using-silence-detection/46001755
+    - [[https://github.com/adblockradio/stream-audio-fingerprint][Landmark project to identify audio]]
+    - [[https://github.com/worldveil/dejavu][Landmark in python]] 
+*** dpwe/audfprint
+    [[https://github.com/dpwe/audfprint][Dpwe's audfprint]] Is a python command line tool for working with
+    audio landmarks. It seems to be a reimplementation of a matlab
+    project.
+**** Install
+     - pip(3?) install -r requirements.txt
+       - make sure you have ffmpeg.. the OSX ffmpeg might give
+         slightly different output (i.e time formatting) to the linux
+         one. It doesn't seem to be a problem.
+
+**** Use.
+     - Get some podcasts. (in this use case the podcast play a little
+       tune(motif) at the beginning and end of the ads. beginning tune and
+       end tune differ)
+     - Clip out the audio motifs that bookend the middle bit with
+       adds. This can be done with audacity's export selection. Wav
+       files seem to be fine (anything ffmpeg can open?).
+       [[/images/audacity_middle_bit_export.png]]
+       - save these clips to named for the start and ends.
+     - Make a landscape database for the start motif and the end
+       motif. 
+       - python audfprint.py new --dbase
+         podcast_middlebit_in.pklz 
+         podcast_clip_in_*.wav
+       - python audfprint.py new --dbase
+         podcast_middlebit_out.pklz 
+         podcast_clip_out_*.wav 
+       - Use this DB to scan podcast to identify the position of the
+         start and end of the middle bit.
+	 - OSX will output in -1500.9s negative seconds format
+***** TODO Use start and stop timestamps to clip out and re-compile podcast with no-middle bit.
+***** TODO Make this .. an automated system
+****** Make a DB of IN/OUT motifs for podcasts that you listen to
+       
+
+
+
+	  
+
+
+
+
+
+
 
 
 
