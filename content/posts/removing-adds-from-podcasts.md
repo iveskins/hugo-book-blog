@@ -1,7 +1,7 @@
 +++
 title = "Removing adds from podcasts"
 author = ["T", "Ivan"]
-lastmod = 2020-05-18T14:12:51+09:00
+lastmod = 2020-05-18T14:18:18+09:00
 weight = 2066
 draft = false
 +++
@@ -80,6 +80,28 @@ project.
     -   Use this DB to scan podcast to identify the position of the
         start and end of the middle bit.
         -   OSX will output in -1500.9s negative seconds format
+
+{{< highlight bash "linenos=table, linenostart=1">}}
+bash-3.2$ python3 audfprint.py match --dbase taz_fpdbase_out.pklz ../audio/taz14_tc.mp3 --find-time-range
+Mon May 18 13:05:39 2020 Reading hash table taz_fpdbase_out.pklz
+Read fprints for 2 files ( 590 hashes) from taz_fpdbase_out.pklz (0.00% dropped)
+Mon May 18 13:06:52 2020 Analyzed #0 ../audio/taz14_tc.mp3 of 4756.956 s to 298377 hashes
+Matched    2.5 s starting at 1932.8 s in ../audio/taz14_tc.mp3 to time    2.5 s in /Users/bwp002/Documents/taz_mid_out_audfprint.wav with    61 of   197 common hashes at rank  0
+Processed 1 files (4759.2 s total dur) in 72.7 s sec = 0.015 x RT
+bash-3.2$ python3 audfprint.py match --dbase taz_fpdbase_out.pklz ../audio/taz14_tc.mp3 --find-time-range --density 7.0
+Mon May 18 13:07:23 2020 Reading hash table taz_fpdbase_out.pklz
+Read fprints for 2 files ( 590 hashes) from taz_fpdbase_out.pklz (0.00% dropped)
+Mon May 18 13:08:35 2020 Analyzed #0 ../audio/taz14_tc.mp3 of 4748.481 s to 67746 hashes
+NOMATCH ../audio/taz14_tc.mp3 4748.5 sec 67746 raw hashes
+Processed 1 files (4759.2 s total dur) in 66.1 s sec = 0.014 x RT
+bash-3.2$ python3 audfprint.py match --dbase taz_fpdbase_out.pklz ../audio/taz14_tc.mp3 --find-time-range --density 15.0
+Mon May 18 13:09:18 2020 Reading hash table taz_fpdbase_out.pklz
+Read fprints for 2 files ( 590 hashes) from taz_fpdbase_out.pklz (0.00% dropped)
+Mon May 18 13:10:27 2020 Analyzed #0 ../audio/taz14_tc.mp3 of 4756.724 s to 200415 hashes
+Matched    2.5 s starting at 1932.8 s in ../audio/taz14_tc.mp3 to time    2.5 s in /Users/bwp002/Documents/taz_mid_out_audfprint.wav with    51 of   125 common hashes at rank  0
+Processed 1 files (4759.2 s total dur) in 66.9 s sec = 0.014 x RT
+bash-3.2$
+{{< /highlight >}}
 
 
 #### <span class="todo TODO_">TODO </span> Use start and stop timestamps to clip out and re-compile podcast with no-middle bit. {#use-start-and-stop-timestamps-to-clip-out-and-re-compile-podcast-with-no-middle-bit-dot}
