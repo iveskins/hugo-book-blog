@@ -1,7 +1,7 @@
 +++
 title = "How do I make gnu screen look better?"
 author = ["T", "Ivan"]
-lastmod = 2020-05-15T16:13:42+09:00
+lastmod = 2020-06-18T13:59:23+09:00
 weight = 2055
 draft = false
 +++

@@ -1,7 +1,7 @@
 +++
 title = "whats the story with Yahoo groups?"
 author = ["T", "Ivan"]
-lastmod = 2020-05-15T16:13:26+09:00
+lastmod = 2020-06-18T13:59:00+09:00
 weight = 2015
 draft = false
 +++

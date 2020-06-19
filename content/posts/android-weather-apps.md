@@ -1,7 +1,7 @@
 +++
 title = "Android weather apps"
 author = ["T", "Ivan"]
-lastmod = 2020-05-15T16:13:41+09:00
+lastmod = 2020-06-18T13:59:22+09:00
 weight = 2054
 draft = false
 +++

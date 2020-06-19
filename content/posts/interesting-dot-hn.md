@@ -1,7 +1,7 @@
 +++
 title = "Interesting HN Discussions."
 author = ["T", "Ivan"]
-lastmod = 2020-05-15T16:13:39+09:00
+lastmod = 2020-06-18T13:59:18+09:00
 weight = 2047
 draft = true
 +++

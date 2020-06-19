@@ -1,7 +1,7 @@
 +++
 title = "Removing adds from podcasts"
 author = ["T", "Ivan"]
-lastmod = 2020-05-18T17:00:32+09:00
+lastmod = 2020-06-18T13:59:29+09:00
 weight = 2066
 draft = false
 +++
@@ -114,14 +114,18 @@ az_13_mid_in_audfprint.wav with    10 of   216 common hashes at rank  2
 
 #### <span class="todo TODO_">TODO </span> Use start and stop timestamps to clip out and re-compile podcast with no-middle bit. {#use-start-and-stop-timestamps-to-clip-out-and-re-compile-podcast-with-no-middle-bit-dot}
 
+[Ref](https://superuser.com/questions/681885/how-can-i-remove-multiple-segments-from-a-video-using-ffmpeg)
+
 {{< highlight bash "linenos=table, linenostart=1">}}
 bash-3.2$ ffmpeg -i audio/taz14_tc.mp3 -filter_complex "atrim=start=0:end=1932[s];[0:a]atrim=start=2075[e];[s]
 [e]concat=v=0:a=1[af]" -map [af]  out.mp3
 {{< /highlight >}}
 
 which outputs this:
+
 [Output mp3](/mp3/out_trimmed.mp3)
-but this is slow as it has to re-encode the file. If I try the
+
+ But this is slow as it has to re-encode the file. If I try the
 "-acodec copy" flag, it says it doesnt work with complex filters.
 
 

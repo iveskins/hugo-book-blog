@@ -1,7 +1,7 @@
 +++
 title = "How do i make Gnu/Screen multi-user"
 author = ["T", "Ivan"]
-lastmod = 2020-05-15T16:13:44+09:00
+lastmod = 2020-06-18T13:59:26+09:00
 weight = 2060
 draft = false
 +++

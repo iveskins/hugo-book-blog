@@ -1,7 +1,7 @@
 +++
 title = "What was that document by the DOD on Agile"
 author = ["T", "Ivan"]
-lastmod = 2020-05-15T16:13:33+09:00
+lastmod = 2020-06-18T13:59:09+09:00
 weight = 2032
 draft = false
 +++

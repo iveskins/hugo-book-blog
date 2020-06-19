@@ -1,7 +1,7 @@
 +++
 title = "Networking and remote"
 author = ["T", "Ivan"]
-lastmod = 2020-05-15T16:13:42+09:00
+lastmod = 2020-06-18T13:59:24+09:00
 weight = 2057
 draft = false
 +++
