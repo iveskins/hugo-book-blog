@@ -1916,7 +1916,8 @@ Example (from my own past): "I'm sick entire..." instead of "I'm sick and tired.
    bassed complient robotics out there.
    https://www.youtube.com/watch?v=TyYW9BmMeSs
    https://courses.csail.mit.edu/6.849/spring17/lectures/C07_images.pdf
-
+   https://www.bloomberg.com/news/articles/2016-03-30/harvard-s-origami-inspired-3d-materials-could-create-easy-pop-up-shelters
+   
 * Emacs                                                              :@emacs:
 
 All posts in here will have the category set to /emacs/.
