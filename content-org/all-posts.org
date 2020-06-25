@@ -1663,7 +1663,7 @@ and [[http://www.cs.tut.fi/~heittolt/datasets#environmental-audio][here]]
    :EXPORT_FILE_NAME: what-was-that-podcast-editing-application-that-had-the-api-to-generate-your-own-voice-from-text
    :END:
  https://www.descript.com/
-** TODO What was the start up that was offerin staging environment CI hosts?
+** DONE What was the start up that was offerin staging environment CI hosts?
    :PROPERTIES:
    :EXPORT_FILE_NAME: what-was-the-start-up-that-was-offerin-staging-environment-ci-hosts
    :END:
@@ -1780,7 +1780,7 @@ bash-3.2$ ffmpeg -i audio/taz14_tc.mp3 -filter_complex "atrim=start=0:end=1932[s
     
 ***** TODO Make this .. an automated system
 ****** Make a DB of IN/OUT motifs for podcasts that you listen to
-** TODO Generating text for utterances
+** DONE Generating text for utterances
    :PROPERTIES:
    :EXPORT_FILE_NAME: generating-text-for-utterances
    :END:
@@ -1808,7 +1808,7 @@ or maybe
 #+BEGIN_SRC bash
 gsed -e 's/\\\u2060//g' < mozilla.sentence.collector.20200527.records.json  | jq  '.data[] | select(.approved!=false).sentence' | gsed "s/[$SINGQ]/'/g; s/[$DUBQ]/\"/g" | iconv -f utf-8 -t ascii//translit |  sed -e 's/^"//' -e 's/"$//' | sed -e 's/\\\"/"/' > mozilla.sentence.collector.20200527.records.utts.clean.txt
 #+END_SRC
-** TODO What is CPR?
+** DONE What is CPR?
    :PROPERTIES:
    :EXPORT_FILE_NAME: what-is-cpr
    :END:
@@ -1827,13 +1827,13 @@ gsed -e 's/\\\u2060//g' < mozilla.sentence.collector.20200527.records.json  | jq
    encouraging to me than seeing yet another American.. because I can
    see the posibility of someone not from America, like me.. doing
    something.
-** TODO Police
+** DONE Police
    :PROPERTIES:
    :EXPORT_FILE_NAME: police
    :END:
 *** Links
     - https://medium.com/@yudkowsky/a-comprehensive-reboot-of-law-enforcement-b76bfab850a3
-** TODO Links 2020 June
+** DONE Links 2020 June
    :PROPERTIES:
    :EXPORT_FILE_NAME: links-2020-june
    :END:
@@ -1878,18 +1878,45 @@ gsed -e 's/\\\u2060//g' < mozilla.sentence.collector.20200527.records.json  | jq
 *** Writing about voice drama and theater
      - [[https://www.bbc.co.uk/bitesize/guides/zqtgq6f/revision/2][Voice work]]
      - [[http://transcription.projects.linguistics.ucsb.edu/A06unicode.pdf][transcription]]
-** TODO Code with voice
+** DONE Code with voice
    :PROPERTIES:
    :EXPORT_FILE_NAME: code-with-voice
    :END:
    - [[https://serenade.ai/]]
    - [[https://news.ycombinator.com/item?id=23497756][Ask HN: speech-to-code with deep learning?]]
-** TODO Finnegans Wake  James Joyce
+** DONE Finnegans Wake  James Joyce
 
- :PROPERTIES:
+ :Properties:
  :EXPORT_FILE_NAME: finnegans-wake-james-joyce
  :END:
   it can be read with hyperlinks to explaianations of the words here. http://finwake.com/
+** DONE All in tents and porposes
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: all-in-tents-and-porposes
+   :END:
+ 
+A malapropism is a substitution of one word for another with a similar sound, but different meaning.
+Example: He's the pineapple [instead of pinnacle] of politeness.
+
+A mondegreen is the substitution of a word or phrase in a song or text for a similar-sounding one.
+Example: "José [instead of Oh say], can't you see..." at the beginning of the National Anthem (understandable if you know that "José" is typically pronounced "Hosay" by "Anglos").
+
+An eggcorn is the substitution of a word for a similar-sounding one, where the original meaning of the phrase survives, in some way. That's the big difference between an eggcorn and the two substitutions above.
+Example (from my own past): "I'm sick entire..." instead of "I'm sick and tired...". I had never seen the phrase in print (at least not at a conscious level) and thought that the ungrammatical sue of "entire" was an interesting idiom.
+** TODO Browser bassed User edited 2013 MUD
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: browser-bassed-user-edited-2013-mud
+   :END:
+   https://writtenrealms.com/about
+** DONE Complient machines
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: complient-machines
+   :END:
+   There are some cool soft sillicone pressure, and origami folding
+   bassed complient robotics out there.
+   https://www.youtube.com/watch?v=TyYW9BmMeSs
+   https://courses.csail.mit.edu/6.849/spring17/lectures/C07_images.pdf
+
 * Emacs                                                              :@emacs:
 
 All posts in here will have the category set to /emacs/.
