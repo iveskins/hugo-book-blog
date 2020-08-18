@@ -1,7 +1,7 @@
 +++
 title = "Terminal Tools"
 author = ["T", "Ivan"]
-lastmod = 2020-06-18T13:58:59+09:00
+lastmod = 2020-08-07T12:01:06+09:00
 weight = 2012
 draft = false
 +++

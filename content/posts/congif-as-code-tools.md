@@ -1,7 +1,7 @@
 +++
 title = "What was that alternative to Terraform that used general coding languages?"
 author = ["T", "Ivan"]
-lastmod = 2020-06-18T13:59:10+09:00
+lastmod = 2020-08-07T12:01:15+09:00
 weight = 2034
 draft = false
 +++

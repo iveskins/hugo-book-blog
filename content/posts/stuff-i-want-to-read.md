@@ -1,7 +1,7 @@
 +++
 title = "Stuff I want to read"
 author = ["T", "Ivan"]
-lastmod = 2020-06-18T13:59:20+09:00
+lastmod = 2020-08-07T12:01:21+09:00
 weight = 2049
 draft = true
 +++

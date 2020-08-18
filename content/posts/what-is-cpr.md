@@ -1,9 +1,9 @@
 +++
 title = "What is CPR?"
 author = ["T", "Ivan"]
-lastmod = 2020-06-18T13:59:30+09:00
+lastmod = 2020-08-07T12:01:29+09:00
 weight = 2068
-draft = true
+draft = false
 +++
 
 Not helping people clear their airways. I mean Corporate Political

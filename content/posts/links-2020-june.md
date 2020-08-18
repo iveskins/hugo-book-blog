@@ -1,7 +1,7 @@
 +++
 title = "Links 2020 June"
 author = ["T", "Ivan"]
-lastmod = 2020-06-19T11:04:56+09:00
+lastmod = 2020-08-07T12:01:30+09:00
 weight = 2070
 draft = false
 +++
@@ -37,7 +37,7 @@ draft = false
     -   [iot spectrum](https://iotalliance.org.nz/wp-content/uploads/sites/4/2019/05/IoT-Spectrum-in-NZ-Briefing-Paper.pdf)
     -   [iot discussion](https://www.thethingsnetwork.org/forum/t/frequency-plan-new-zealand/6846/23)
 -   [old nokia phone with lora](http://www.mastrogippo.it/2018/07/1337-3310-wifi-hardware-design/)
--   [2020 ai art](https://aiartists.org/ai-generated-art-tools)
+-   [2020 axi art](https://aiartists.org/ai-generated-art-tools)
 -   Goggles
     -   [Rugged GLASSES](https://www.tacticalrx.com/prescription/gyst/gyst/sg1-15-rx-pid-2224)
     -   <https://sportsoptical.com/#post-253>

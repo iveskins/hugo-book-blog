@@ -1,9 +1,9 @@
 +++
 title = "Police"
 author = ["T", "Ivan"]
-lastmod = 2020-06-18T13:59:31+09:00
+lastmod = 2020-08-07T12:01:29+09:00
 weight = 2069
-draft = true
+draft = false
 +++
 
 ## Links {#links}

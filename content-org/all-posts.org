@@ -1859,7 +1859,7 @@ gsed -e 's/\\\u2060//g' < mozilla.sentence.collector.20200527.records.json  | jq
       - [[https://iotalliance.org.nz/wp-content/uploads/sites/4/2019/05/IoT-Spectrum-in-NZ-Briefing-Paper.pdf][iot spectrum]]
       - [[https://www.thethingsnetwork.org/forum/t/frequency-plan-new-zealand/6846/23][iot discussion]]
     - [[http://www.mastrogippo.it/2018/07/1337-3310-wifi-hardware-design/][old nokia phone with lora]]  
-    - [[https://aiartists.org/ai-generated-art-tools][2020 ai art]]
+    - [[https://aiartists.org/ai-generated-art-tools][2020 axi art]]
     - Goggles
       - [[https://www.tacticalrx.com/prescription/gyst/gyst/sg1-15-rx-pid-2224][Rugged GLASSES]]
       - https://sportsoptical.com/#post-253
@@ -1903,7 +1903,7 @@ Example: "José [instead of Oh say], can't you see..." at the beginning of the N
 
 An eggcorn is the substitution of a word for a similar-sounding one, where the original meaning of the phrase survives, in some way. That's the big difference between an eggcorn and the two substitutions above.
 Example (from my own past): "I'm sick entire..." instead of "I'm sick and tired...". I had never seen the phrase in print (at least not at a conscious level) and thought that the ungrammatical sue of "entire" was an interesting idiom.
-** TODO Browser bassed User edited 2013 MUD
+** DONE Browser bassed User edited 2013 MUD
    :PROPERTIES:
    :EXPORT_FILE_NAME: browser-bassed-user-edited-2013-mud
    :END:
@@ -1917,7 +1917,342 @@ Example (from my own past): "I'm sick entire..." instead of "I'm sick and tired.
    https://www.youtube.com/watch?v=TyYW9BmMeSs
    https://courses.csail.mit.edu/6.849/spring17/lectures/C07_images.pdf
    https://www.bloomberg.com/news/articles/2016-03-30/harvard-s-origami-inspired-3d-materials-could-create-easy-pop-up-shelters
+** DONE Other film streaming services
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: other-film-streaming-services
+   :END:
+   https://easterneuropeanmovies.com/
+   fandor
+** DONE What was that RNN piano player demo?
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: what-was-that-rnn-piano-player-demo
+   :END:
+   [[https://magenta.tensorflow.org/demos/performance_rnn/index.html#3|1,0,1,0,1,2,0,1,0,1,1,0|1,1,1,1,1,1,1,1,1,1,1,1|1,1,1,1,1,1,1,1,1,1,1,1|true][performance RNN]] it was  trained on piano performances. and it seems
+   to have midi in and midi out 
+   i read about it [[http://innovativeteams.net/practical-examples-tensorflow-js-bringing-ml-browser/][here]]
+   and some other apps built with the [[https://magenta.tensorflow.org/demos/web/][magentajs]] framework?
+
+
+   this was also where i heard the [[https://magenta.tensorflow.org/nsynth-instrument][catflute]] that merged a cat meow and
+   a flute? together 
+** DONE What is WebRTC
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: what-is-webrtc
+   :END:
+ 
+communicate in 200ms for live video.
+
+pieced to gether unrelated parts
+
+
+Generic Description: real time communication between browsers and mobile.
+
+now used to conferencing apps.
+talk from one persone to another.
+
+- can do many interesting things: 
+  - TOR's snowflake. censorship circumvention
+    (p2p traffic not dependent on server)
+  - server-side proccessing (realtime processing of
+    video/audio. subtitles etc)
+  - P2P data transfer. http://pyget.com/about.html
+  - augmented reality([[https://www.youtube.com/watch?v=rgtGswLDsT4][hololense]])
+
+
+
+***  WebRTC API
+    - SDP
+      session description protocol
+      declare properties about self.
+      - I support these codecs
+      - this is my ip
+      - these are the streams (tracks) I am going to send you
+
+**** How do I talk to you.
+     you have an IP that I cant directly access.
+     I have no idea where you are.
+     STUN server.
+      - send a UDP packet to StunServer on :5000<>:5000
+	punches a permanent hole through NAT
+	sned a packet to NATB forwarded through to browser.
+      - now can reply
+
+**** ORTC API
+***** RTCPeenConnection
+****** SRTP
+       Sending video buffers of UDP losing 3% randomly stopping
+       - Jitter buffer
+       - ability to account for loss
+	 - adjust amount of delay dynamically.
+	   - waits for packets to arrive
+	   - raise and lower latency
+	   - ask for resending of lost packets.
+	     - inside the latency time frame
+***** DATAChannel
+****** SCTP
+       - Data transfer
+       - send binary back and forward, account for loss.
+       - negotiate a channel
+	 - decide the parameters of the channel (lossy?)
+***** DTLS
+      How do we communicate with people listening in the middle
+      - TLS that accounts for loss
+      - DH encryption
+      - share states  
+	even if someone is eves-dropping they can't steal
+**** ICE
+     - how do I talk to you?
+***** STUN
+      punched hole through NAT
+****** UDP
+       - Lossy connection 
+       - enables it to be fast?
+***** TURN
+      B establish session with turn server
+      A sends packets through turn server.
+****** TCP
+****** RTP Framing
+*** Ever changing.
+*** Pion-webrtc
+*** Current WebRTC designed with incumbent application in mind
+    - no access to send arbitrary video 
+    - no access to bring own decoder.
+*** All in Go.
+** DONE What was that open source water sensor??
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: what-was-that-open-source-water-sensor
+   :END:
+   - https://www.instructables.com/id/KnowFlow-Special-Design/
+   - [[https://medium.com/@marcozecchini.2594/low-cost-water-quality-sensors-cf083139d3a5][Oxygen]]
+   - [[https://github.com/iveskins/KnowFlow_AWM][KnowFlow]]
    
+
+   also floating ecosystems
+   - [[https://www.biomatrixwater.com/floating-ecosystems/][like this]]
+     I wonder if this could be used in KoyaIke to clean up
+** DONE The morphology of ideas
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: the-morphology-of-ideas
+   :END:
+ 
+   - [[https://en.wikipedia.org/wiki/Morphometrics][Morphometrics]] quantitative measure of form.
+   - [[https://www.semanticscholar.org/paper/Topology-in-Biology%3A-Singularities-and-Surgery-in-Isaeva-Kasyanov/3dc756074c1a275a8001a34fc7760b66a7202ea6][Topology in Biology]]
+   - [[https://innovationmanagement.se/imtool-articles/how-to-using-a-morphological-matrix-to-generate-ideas/][Morphological matrix for idea generation]] ? latent space in domain
+     specific multidimentional array. drawing out to make ideas.
+     - could this be extended to other things
+       - Make a grid of space and params, have people inhabit those
+         spaces and generate form with body to discover something new
+   - [[https://ojs.cvut.cz/ojs/index.php/ap/article/download/194/26][history]] (App. 3: A clear example of morphological analysis from 17th century, in [8])
+   - [[https://www.compthree.com/blog/autoencoder/][auto encoder?]]
+   - [[https://www.researchgate.net/project/The-Morphology-of-ideas][Celtic knott]]
+   - [[https://mnclr.com/latent-space][Un related art installation]]
+     
+
+
+   -Bamboo Geodesic
+    - [[https://thepermaculturecollective.com/building-a-geodesic-bamboo-stardome/][small all bamboo]]
+** DONE What was that thing about writing a law with git
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: what-was-that-thing-about-writing-a-law-with-git
+   :END:
+ 
+   As read about in [[https://news.ycombinator.com/item?id=23710016][HN]]. 
+   https://congress.crowd.law/case-vtaiwan.html
+
+   Taiwan is a four-stage online and offline process for moving from issue to legislative enactment while building consensus among diverse stakeholders. It has been used to craft 26 pieces of legislation relating to the digital economy collaboratively between the government and the public. vTaiwan relies on a series of existing open source tools (meaning they can be freely modified and customized, as needed). The process begins with a member of the public proposing an issue and a relevant government agency agreeing to steward and participate in the process. Since 2017, each Ministry is obliged to appoint a Participation Officer responsible for engaging in the process.
+** DONE Create a Janus
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: create-a-janus-snap
+   :END:
+*** Snap
+    - [[https://oceanai.mit.edu/moos-dawg17/docs/08-fazzari.pdf][pdf about using snaps and Ubuntu Core in production]]
+    - [[https://snapcraft.io/tutorials/create-your-own-core-image#3-custom-model-assertion][making json for a snap auto setup]] "Create your own Ubuntu Core
+      image"
+    - [[https://hackernoon.com/managing-ubuntu-snaps-the-stuff-no-one-tells-you-625dfbe4b26c][Managing Ubuntu Snaps: the stuff no one tells you]]
+    - [[https://github.com/RSATom/janus-gateway-snap][Helper repo to build snap]]
+*** GCS
+    - [[https://medium.com/good-robot/how-to-run-janus-on-a-google-cloud-compute-instance-and-build-your-own-webrtc-streaming-server-14144f9efb8][How to run Janus on a Google Cloud Compute]] 
+*** Janus implementations
+    - [[https://github.com/skyway/skyway-webrtc-gateway][Skyway]] uses Janus as part of their system. They are a Japanese company?
+** DONE Single use Drones
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: single-use-drones
+   :END:
+   [[https://www.dogonews.com/2017/2/16/biodegradable-cardboard-drones-designed-to-crash-and-die-after-single-use][Cardboard glider]] 
+** DONE Local Sneakernet WOT SSO
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: local-sneakernet-wot-sso
+   :END:
+*** Self hosted SSO
+    - [[https://gluu.org/docs/gluu-server/user-management/local-user-management/#user-registration][GLuu]]
+    - [[https://www.keycloak.org/getting-started/getting-started-operator-openshift][Keycloak]]
+*** App integration
+    - [[https://github.com/omniauth/omniauth][OmniAuth]]
+** DONE Voice style transfer NN
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: voice-style-transfer-nn
+   :END:
+   - [[https://www.respeecher.com/][Respeak]] is a company doing this 
+** DONE What was that thingwith the back and white diamond patterns
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: what-was-that-thingwith-the-back-and-white-diamond-patterns
+   :END:
+It was [[http://archive.today/2020.01.13-203158/https://observablehq.com/@radames/diamond-theory-symmetry-in-binary-spaces][Diamond Theory]]  
+> Inscribe a white diamond in a black square. Split the resulting figure along its vertical and horizontal midlines into four quadrants so that each quadrant is a square divided by one of its diagonals into a black half and a white half. Call the resulting figure DD.
+
+Let GG be the group of 24 transformations of DD obtained by randomly permuting (without rotating) the four quadrants of DD. Let S_{4}S 
+
+This really screws with vision. Its very hard for me to predict the
+outcome visually of a change made by swapping two corners
+** DONE What was that Fox natural language game?
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: what-was-that-fox-natural-language-game
+   :END:
+   https://opensource.googleblog.com/2020/03/semantic-reactor-tool-for-experimenting.html
+   https://stadia.dev/blog/creating-game-ai-using-mostly-english/
+*** See also
+    - [[https://linto.ai/][open source e2e platform for voice-operated solutions]]
+      They had a reespeaker rpi example
+** DONE What was that live code / blog / notebook platform?
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: what-was-that-live-code-blog-notebook-platform
+   :END:
+   https://observablehq.com/
+
+   and the thing you were reading was about [[https://observablehq.com/@radames/tf-js-universal-sentence-encoder-lite-textual-similiarity][TensorFlow.js Universal Sentence Encoder Lite - Textual Similiarity]]
+** DONE What was the project to assess english pronounciation by AI?
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: what-was-the-project-to-assess-english-pronounciation-by-ai
+   :END:
+   - https://phabricator.wikimedia.org/T166929#5473028
+   - 2018 version: https://www.youtube.com/watch?v=Bof5sJWZ100&t=103s
+   - 2017 paper: https://arxiv.org/pdf/1709.01713.pdf
+   - 2018 blueprint: https://www.ets.org/Media/Research/pdf/RM-18-02.pdf
+   - 2020 multi-phrasal version: https://www.amiralearning.com/
+   - https://discourse.mozilla.org/t/intelligibility-remediation/40737/12
+** DONE What was the Systems thinking loop animation website
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: what-was-the-systems-thinking-loop-animation-website
+   :END:
+   - https://ncase.me/loopy/
+   - [[https://news.ycombinator.com/item?id=23765297][Discussion]]
+   - [[https://www.amazon.com/Thinking-Systems-Donella-H-Meadows/dp/1603580557][Thinking in Systems]] book
+** DONE NZ warrantless interception
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: nz-warrantless-interception
+   :END:
+*** Links
+    - [[https://theintercept.com/2014/09/15/new-zealand-gcsb-speargun-mass-surveillance/][The intercept]]
+    - [[https://consultations.justice.govt.nz/independent/search-and-surveillance-act/user_uploads/04-interception-and-tracking.pdf][Govt Doc]]
+    - [[http://www.legislation.govt.nz/act/public/2012/0024/latest/DLM2136536.html][Legislation]]
+** TODO Procrastination loop
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: procrastination-loop
+   :END:
+  - https://bit.ly/38Jto6M
+       -
+         [["https://ncase.me/loopy/v1.1/?data=[[[1,353,159,1,%22strangers%22,4],[3,176,93,0.5,%22love%22,0],[5,876,367,0.5,%22you%22,4],[7,520,314,0.5,%22full%2520commitment%22,1],[8,295,287,0.5,%22thinking%2520of%22,1],[9,307,544,0.5,%22just%2520wanna%2520tell%22,2],[10,568,479,0.5,%22feeling%22,2],[11,542,682,0.5,%22Gotta%2520make%22,3],[12,840,568,0.5,%22understand%22,3],[13,493,163,0.5,%22Know%2520the%2520rules%22,0],[14,726,102,0.5,%22I%22,4],[15,1043,149,0.5,%22Never%2520Gonna%22,4],[16,1260,385,0.5,%22Give%2520up%22,4],[17,1269,561,0.5,%22let%2520down%22,4],[18,1363,177,0.5,%22run%2520around%2520%2526%2520desert%22,4],[19,1085,495,0.5,%22Make%2520cry%22,4],[20,1079,685,0.5,%22Tell%2520a%2520lie%2520and%2520hurt%22,4],[21,1409,397,0.5,%22say%2520goodbye%22,4]],[[3,1,12,1,0],[1,13,15,1,0],[13,5,6,1,0],[13,14,-12,1,0],[14,8,62,1,0],[8,7,8,1,0],[7,5,18,1,0],[14,9,58,1,0],[9,10,-2,1,0],[10,5,70,1,0],[14,11,70,1,0],[11,12,10,1,0],[12,5,160,1,0],[14,15,74,-1,0],[18,5,20,-1,0],[15,18,19,-1,0],[15,16,25,-1,0],[16,5,-16,-1,0],[15,19,112,-1,0],[19,5,-15,-1,0],[15,17,-40,-1,0],[17,5,-99,-1,0],[15,20,-47,-1,0],[20,5,55,-1,0],[15,21,80,1,0],[5,15,62,1,0]],[],21%5D"]][long]] 
+** DONE What was that japan walking blog?
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: what-was-that-japan-walking-blog
+   :END:
+ https://craigmod.com/ridgeline/068/
+** DONE Public domain texts
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: public-domain-texts
+   :END:
+   - https://inspiredpublic.com/books/
+   - http://www.enzb.auckland.ac.nz/browse.php
+** DONE What was that Secure file transfer project?
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: what-was-that-secure-file-transfer-project
+   :END:
+   It was [[https://magic-wormhole.readthedocs.io/en/latest/][Magic Wormhole]] . And you read about it [[https://latacora.micro.blog/2020/02/19/stop-using-encrypted.html][here]]
+   which also mentioend [[https://github.com/FiloSottile/age][age]] file encryption tool
+** DONE Worms 2 level skip codes?
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: worms-2-level-skip-codes
+   :END:
+   They are on [[https://web.archive.org/web/20190604063925/https://gamefaqs.gamespot.com/pc/47995-worms-2/faqs/17376][gamefaqs]]
+   
+
+   -Level Passwords
+ 1 ONCEUPONA                           2 TIMETHEREWERE
+ 3 SOMESMALLWORMS                   4 WHOGOTVERYVERY
+ 5 ANNOYEDAND                       6 DECIDEDTO  
+ 7 GOTOARMSIN                       8 ORDERTOWIPE
+ 9 OUTTHEIR                        10 VICIOUSENEMY
+11 COUNTERPARTS                    12 THEYDEVELOPED
+13 SOMEREALLY                      14 COOLWEAPONSSUCH
+15 ASBANANABOMBS                   16 ANDMAGICBULLETS
+17 THEYTRAINED                     18 ALLNIGHTAND
+19 EVERYDAYSOTHEY                  20 WOULDBECOME
+21 PROFICIENT                      22 INTHEIRWORMLY
+23 WAYSSOMETIME                    24 THEYWOULDSHOOT
+25 GRANNIESJUST                    26 FORFUNANDLAUGH
+27 ABOUTITINTHE                    28 EVENINGTIME
+29 WEAPOLOGISEON                   30 BEHALFOFALLTHE
+31 TERRITORIESTHAT                 32 WEWENTTOTHE
+33 TROUBLEOFTRANSLATING            34 WORMS2INTOBUTWE
+35 DIDNTHAVETIMETO                 36 TRANSLATETHESE
+37 PASSWORDSNOTTHAT                38 THEYNEEDTOBEDONE
+39 WESUPPOSETHAT                   40 YOUAREREALLY
+41 EXPECTINGTO                     42 SEEAWONDERFUL
+43 CHEATMODEWHEN                   44 FINISHTHEMISSIONS
+45 ANDYOUARERIGHT
+** DONE Generative art tool simple gui?
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: generative-art-tool-simple-gui
+   :END:
+   [[https://100r.co/site/ronin.html][Ronin]]
+** DONE What was that list of lisps
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: what-was-that-list-of-lisps
+   :END:
+   http://jakob.space/blog/thoughts-on-lisps.html
+   Which talked about Fennel which compiles into lua, to make a Löve
+   bassed game in a lisp game jam
+** DONE Guides to starting things
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: guides-to-starting-things
+   :END:
+*** A tech non-profit
+    https://www.ffwd.org/playbook/
+*** A startup
+    https://www.ycombinator.com/library
+** DONE WebRTC for music
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: webrtc-for-music
+   :END:
+  - https://hacker-news.news/post/22813565
+  - https://github.com/corrados/jamulus
+  - https://www.cockos.com/ninjam/
+  - https://sourceforge.net/p/llcon/discussion/533517/thread/070485619d/
+** DONE JLPT resources
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: jlpt-resources
+   :END:
+ 
+*** [[http://www.jgram.org/]] Discussion and examples of grammar formations
+
+*** [[https://nihongonosensei.net/]] grammar look up
+*** [[http://nihongonote.com/post-934/]] grammar explaiantions in Japanese
+
+*** [[http://www.tanos.co.uk/jlpt/skills/grammar/]] 
+
+*** [[https://www.youtube.com/channel/UCVx6RFaEAg46xfAsD2zz16w]] Nihongo no mori chanel 
+** TODO What was that site with a curated list of softwear including self hostable
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: what-was-that-site-with-a-curated-list-of-softwear-including-self-hostable
+   :END:
+   it was [[https://endxo.com/][endxo]]. for example https://endxo.com/p/gitpod
+** TODO Who was the Tokyo Journalist on money talk rthk?
+   :PROPERTIES:
+   :EXPORT_FILE_NAME: who-was-the-tokyo-journalist-on-money-talk-rthk
+   :END:
+*** William Pesek 
+    https://asia.nikkei.com/Opinion/William-Pesek
+    https://muckrack.com/williampesek/articles
 * Emacs                                                              :@emacs:
 
 All posts in here will have the category set to /emacs/.

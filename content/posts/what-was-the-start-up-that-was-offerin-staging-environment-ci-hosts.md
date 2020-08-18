@@ -1,9 +1,9 @@
 +++
 title = "What was the start up that was offerin staging environment CI hosts?"
 author = ["T", "Ivan"]
-lastmod = 2020-06-18T13:59:29+09:00
+lastmod = 2020-08-07T12:01:28+09:00
 weight = 2065
-draft = true
+draft = false
 +++
 
 [layer ci](https://layerci.com/)

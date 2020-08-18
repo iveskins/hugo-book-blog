@@ -1,7 +1,7 @@
 +++
 title = "Usefull Tools"
 author = ["T", "Ivan"]
-lastmod = 2020-06-18T13:58:57+09:00
+lastmod = 2020-08-07T12:01:04+09:00
 weight = 2008
 draft = false
 +++

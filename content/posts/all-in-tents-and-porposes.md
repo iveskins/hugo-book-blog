@@ -1,7 +1,7 @@
 +++
 title = "All in tents and porposes"
 author = ["T", "Ivan"]
-lastmod = 2020-06-19T14:13:33+09:00
+lastmod = 2020-08-07T12:01:31+09:00
 weight = 2072
 draft = false
 +++

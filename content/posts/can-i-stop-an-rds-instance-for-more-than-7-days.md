@@ -1,7 +1,7 @@
 +++
 title = "Can I stop an RDS instance for more than 7 days?"
 author = ["T", "Ivan"]
-lastmod = 2020-06-18T13:59:06+09:00
+lastmod = 2020-08-07T12:01:11+09:00
 weight = 2025
 draft = false
 +++

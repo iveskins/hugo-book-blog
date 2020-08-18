@@ -1,7 +1,7 @@
 +++
 title = "Development"
 author = ["T", "Ivan"]
-lastmod = 2020-06-18T13:59:19+09:00
+lastmod = 2020-08-07T12:01:20+09:00
 weight = 2048
 draft = true
 +++

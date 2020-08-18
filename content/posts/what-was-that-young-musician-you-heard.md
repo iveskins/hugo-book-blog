@@ -1,7 +1,7 @@
 +++
 title = "What was that young musician you heard?"
 author = ["T", "Ivan"]
-lastmod = 2020-06-18T13:59:03+09:00
+lastmod = 2020-08-07T12:01:10+09:00
 weight = 2022
 draft = false
 +++

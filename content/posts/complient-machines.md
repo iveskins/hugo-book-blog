@@ -1,7 +1,7 @@
 +++
 title = "Complient machines"
 author = ["T", "Ivan"]
-lastmod = 2020-06-25T17:32:14+09:00
+lastmod = 2020-08-07T12:01:32+09:00
 weight = 2074
 draft = false
 +++
