@@ -1,3 +1,11 @@
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Permissions-Policy = "interest-cohort=()"
+
+
+
 [build]
 publish = "public"
 command = "hugo --gc --minify --theme book"
